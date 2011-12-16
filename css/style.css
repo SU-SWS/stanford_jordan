@@ -1,0 +1,1325 @@
+/* $Id: style.css,v 1.1.2.11 2010/07/02 22:11:04 sociotech Exp $ */
+
+/* Margin, Padding, Border Resets
+-------------------------------------------------------------- */
+html, body, div, span, p,
+dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+form, fieldset, input, textarea {
+  margin: 0;
+  padding: 0;
+}
+
+img, abbr, acronym {
+  border: 0;
+}
+
+
+/* HTML Elements
+-------------------------------------------------------------- */
+p {
+  margin: 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.5em 0;
+}
+
+ul, ol, dd {
+  margin-bottom: 1.5em;
+  margin-left: 2em; /* LTR */
+}
+
+li ul, li ol {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+blockquote {
+}
+
+hr {
+  height: 1px;
+  border: 1px solid gray;
+}
+
+/* tables */
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+caption {
+  text-align: left;
+}
+
+th {
+  margin: 0;
+  padding: 0 10px 0 0;
+}
+
+th.active img {
+  display: inline;
+}
+
+thead th {
+  padding-right: 10px;
+}
+
+td {
+  margin: 0;
+  padding: 3px;
+}
+
+/* Remove grid block styles from Drupal's table ".block" class */
+td.block {
+  border: none;
+  float: none;
+  margin: 0;
+}
+
+/* Maintain light background/dark text on dragged table rows */
+tr.drag td,
+tr.drag-previous td {
+  background: #FFFFDD;
+  color: #000;
+}
+
+
+/* Accessibility
+/-------------------------------------------------------------- */
+/* skip-link to main content, hide offscreen */
+#skip a,
+#skip a:hover,
+#skip a:visited {
+  height: 1px;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: -500px;
+  width: 1px;
+}
+
+/* make skip link visible when selected */
+#skip a:active,
+#skip a:focus {
+  background-color: #fff;
+  color: #000;
+  height: auto;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  width: auto;
+  z-index: 99;
+}
+
+#skip a:hover {
+  text-decoration: none;
+}
+
+
+/* Helper Classes
+/-------------------------------------------------------------- */
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+/* clear floats after an element */
+/* (also in ie6-fixes.css, ie7-fixes.css) */
+.clearfix:after,
+.clearfix .inner:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  overflow: auto;
+  visibility: hidden;
+}
+
+
+/* Grid Layout Basics (specifics in 'gridnn_x.css')
+-------------------------------------------------------------- */
+/* center page and full rows: override this for left-aligned page */
+.page,
+.row {
+  margin: 0 auto;
+}
+
+/* fix layout/background display on floated elements */
+.row,
+.nested,
+.block {
+  overflow: hidden;
+}
+
+/* full-width row wrapper */
+div.full-width {
+  width: 100%;
+}
+
+/* float, un-center & expand nested rows */
+.nested {
+  float: left; /* LTR */
+  margin: 0;
+  width: 100%;
+}
+
+/* allow Superfish menus to overflow */
+#sidebar-first.nested,
+#sidebar-last.nested,
+div.superfish {
+  overflow: visible;
+}
+
+/* sidebar layouts */
+.sidebars-both-first .content-group {
+  float: right; /* LTR */
+}
+
+.sidebars-both-last .sidebar-first {
+  float: right; /* LTR */
+}
+
+/* Grid Mask Overlay
+-------------------------------------------------------------- */
+#grid-mask-overlay {
+  display: none;
+  left: 0;
+  opacity: 0.75;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 997;
+}
+
+#grid-mask-overlay .row {
+  margin: 0 auto;
+}
+
+#grid-mask-overlay .block .inner {
+  background-color: #e3fffc;
+  outline: none;
+}
+
+.grid-mask #grid-mask-overlay {
+  display: block;
+}
+
+.grid-mask .block {
+  overflow: visible;
+}
+
+.grid-mask .block .inner {
+  outline: #f00 dashed 1px;
+}
+
+#grid-mask-toggle {
+  background-color: #777;
+  border: 2px outset #fff;
+  color: #fff;
+  cursor: pointer;
+  font-variant: small-caps;
+  font-weight: normal;
+  left: 0;
+  -moz-border-radius: 5px;
+  padding: 0 5px 2px 5px;
+  position: absolute;
+  text-align: center;
+  top: 22px;
+  -webkit-border-radius: 5px;
+  z-index: 998;
+}
+
+#grid-mask-toggle.grid-on {
+  border-style: inset;
+  font-weight: bold;
+}
+
+
+/* Site Info
+-------------------------------------------------------------- */
+#header-site-info {
+  width: auto;
+}
+
+#site-name-wrapper {
+  float: left;   /* LTR */
+}
+
+#site-name,
+#slogan {
+  display: block;
+}
+
+#site-name a:link,
+#site-name a:visited,
+#site-name a:hover,
+#site-name a:active {
+  text-decoration: none;
+}
+
+#site-name a {
+  outline: 0;
+}
+
+
+/* Regions
+-------------------------------------------------------------- */
+
+/* Header Regions
+-------------------------------------------------------------- */
+#header-group {
+  overflow: visible;
+}
+
+/* Content Regions (Main)
+-------------------------------------------------------------- */
+.node-bottom {
+  margin: 1.5em 0 0 0;
+}
+
+/*  Clear floats on regions
+-------------------------------------------------------------- */
+#header-top-wrapper,
+#header-group-wrapper,
+#preface-top-wrapper,
+#main-wrapper,
+#preface-bottom,
+#content-top,
+#content-region,
+#content-bottom,
+#postscript-top,
+#postscript-bottom-wrapper,
+#footer-wrapper,
+#footer-message-wrapper {
+  clear: both;
+}
+
+
+/* Drupal Core
+/-------------------------------------------------------------- */
+
+/* Lists
+/-------------------------------------------------------------- */
+.item-list ul li {
+  margin: 0;
+}
+
+.block ul,
+.block ol {
+  margin-left: 2em; /* LTR */
+  padding: 0;
+}
+
+.content-inner ul,
+.content-inner ol {
+  margin-bottom: 1.5em;
+}
+
+.content-inner li ul,
+.content-inner li ol {
+  margin-bottom: 0;
+}
+
+.block ul.links {
+  margin-left: 0; /* LTR */
+}
+
+/* Menus
+/-------------------------------------------------------------- */
+ul.menu li,
+ul.links li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Primary Menu
+/-------------------------------------------------------------- */
+/* use ID to override overflow: hidden for .block, dropdowns should always be visible */
+#primary-menu {
+  overflow: visible;
+}
+
+/* remove left margin from primary menu list */
+#primary-menu.block ul {
+  margin-left: 0; /* LTR */
+}
+
+/* remove bullets, float left */
+.primary-menu ul li {
+  float: left; /* LTR */
+  list-style: none;
+  position: relative;
+}
+
+/* style links, and unlinked parent items (via Special Menu Items module) */
+.primary-menu ul li a,
+.primary-menu ul li .nolink {
+  display: block;
+  padding: 0.75em 1em;
+  text-decoration: none;
+}
+
+/* Add cursor style for unlinked parent menu items */
+.primary-menu ul li .nolink {
+  cursor: default;
+}
+
+/* remove outline */
+.primary-menu ul li:hover,
+.primary-menu ul li.sfHover,
+.primary-menu ul a:focus,
+.primary-menu ul a:hover,
+.primary-menu ul a:active {
+  outline: 0;
+}
+
+/* Secondary Menu
+/-------------------------------------------------------------- */
+.secondary-menu-inner ul.links {
+  margin-left: 0; /* LTR */
+}
+
+
+
+/* Pagers
+-------------------------------------------------------------- */
+ul.pager {
+  margin: 20px 0;
+}
+
+ul.pager li {
+  margin: 0;
+  white-space: nowrap;
+}
+
+ul.pager a,
+ul.pager li.pager-current {
+  border-style: solid;
+  border-width: 1px;
+  padding: 3px 6px 2px 6px;
+  text-decoration: none;
+}
+
+ul.pager a:link,
+ul.pager a:visited {
+  color: inherit;
+}
+
+ul.pager a:hover,
+ul.pager a:active,
+ul.pager a:focus {
+  border-style: solid;
+  border-width: 1px;
+}
+
+ul.pager span.pager-ellipsis {
+  padding: 0 4px;
+}
+
+.item-list .pager li {
+  padding: 0;
+}
+
+
+/* Forms
+/-------------------------------------------------------------- */
+/* defaults for all text fields */
+.form-text {
+  padding: 2px;
+}
+
+/* defaults for all form buttons */
+form input.form-submit {
+  cursor: pointer;
+  font-weight: bold;
+  margin: 2px;
+  padding: 3px 5px;
+}
+
+form input.form-submit:hover {
+  cursor: pointer;
+}
+
+fieldset {
+  margin: 15px 0;
+  padding: 10px;
+}
+
+html.js fieldset.collapsed {
+  margin-bottom: 15px;
+}
+
+/* limit width of form inputs */
+textarea,
+.form-item input,
+.form-item select,
+#content-region input.form-text {
+  max-width: 95%;
+}
+
+html.js textarea {
+  max-width: 100%;
+}
+
+/* adjust for collapsible fieldset differences */
+fieldset.collapsible .resizable-textarea textarea {
+  max-width: 101.5%;
+}
+
+fieldset.collapsible .resizable-textarea .grippie {
+  width: 101%;
+}
+
+/* keep admin pages visible */
+.page-admin #main-content-inner .nested,
+.page-admin #content-group,
+.page-admin #content-region,
+.page-admin #content-inner {
+  margin-bottom: 1.5em;
+  overflow: visible;
+}
+
+/* keep admin form elements on top */
+.page-admin .content-inner-inner {
+  z-index: 10;
+}
+
+/* theme settings form field width limit */
+form#system-theme-settings select,
+form#system-theme-settings input.form-text {
+  max-width: 95%;
+}
+
+/* keep theme select form visible */
+#system-themes-form {
+  position: relative;
+  z-index: 1;
+}
+
+/* keep theme switcher visible */
+.form-item select#edit-theme {
+  max-width: none;
+}
+
+/* keep admin columns from dropping under */
+div.admin .left,
+div.admin .right {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+/* region labels on block admin page */
+.block-region {
+  background-color: #F3F3F3;
+  border: 3px dashed #CCCCCC;
+  color: #555555;
+  font-weight: bold;
+  margin: 1px;
+  padding: 3px;
+  text-align: center;
+  text-shadow: 1px 1px #FDFDFD;
+  text-transform: uppercase;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
+/* User Login Form
+/-------------------------------------------------------------- */
+/* remove centering on login form */
+#user-login-form {
+  text-align: left; /* LTR */
+}
+
+#user-login-form .item-list {
+  margin-top: 1em;
+}
+
+#user-login-form .item-list ul {
+  margin-left: 0; /* LTR */
+}
+
+/* remove list styling on login form */
+#user-login-form div.item-list ul li {
+  list-style-type: none;
+  margin: 0;
+}
+
+/* adjust openid link (display set in openid.js) */
+#user-login-form li.openid-link a,
+#user-login li.openid-link a {
+  background-position: 0 0;
+  padding: 0 0 0 20px;
+}
+
+
+
+/* Blocks
+/-------------------------------------------------------------- */
+.block {
+  float: left; /* LTR */
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+
+/* no gutters for blocks in content region */
+#content-content .inner {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* administrator block edit links */
+.block .inner {
+  position: relative;
+}
+
+.block .stanford_c1-edit {
+  display: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  text-align: left; /* LTR */
+  top: 0;
+  z-index: 10;
+}
+
+.block:hover > .inner > .stanford_c1-edit {
+  display: block;
+}
+
+.block .stanford_c1-edit a {
+  background-color: #fff;
+  border: 1px solid #333;
+  display: block;
+  float: left;
+  outline: 0;
+  padding: 2px 2px 2px 6px;
+  text-indent: -9999px;
+  width: 16px;
+}
+
+.block .stanford_c1-edit a:hover {
+  background-color: #eee;
+  text-decoration: none;
+}
+
+.block .stanford_c1-block-config,
+.block .stanford_c1-block-edit {
+  background: url(../images/emblem-system.png) center center no-repeat;
+}
+
+.block .stanford_c1-edit-menu {
+  background: url(../images/text-x-generic-menu.png) center center no-repeat;
+}
+
+
+/* Nodes
+/-------------------------------------------------------------- */
+div.node {
+  margin-bottom: 1.5em;
+}
+
+/* remove image borders and add margin for feed, node link, table sort images */
+a.feed-icon img,
+ul.links img,
+th img {
+  border: 0;
+  margin: 0 5px;
+}
+
+/* remove awkward link padding on login/register to comment links */
+#content-content .node ul.links li.comment_forbidden a {
+  padding-right: 0;
+}
+
+
+/* Comments
+/-------------------------------------------------------------- */
+div.comment {
+  margin: 15px 0;
+  padding: 10px;
+}
+
+div.comment h3.title {
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+div.comment div.links a,
+div.comment ul.links a {
+  text-align: right;
+}
+
+.comment-folded {
+  margin: 1em 0 1em 1em;
+}
+
+.comment-folded .subject {
+  font-weight: bold;
+  padding-right: 5px;
+  text-transform: uppercase;
+}
+
+.comment-folded .subject a {
+  font-style: normal;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.signature {
+  border-top-style: solid;
+  border-top-width: 1px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+
+/* Profiles
+/-------------------------------------------------------------- */
+.profile {
+  clear: none;
+  margin: 12px 0;
+}
+
+.profile h2.title {
+  margin-top: 15px;
+  border-bottom: 1px solid;
+}
+
+.profile dt {
+  float: left; /* LTR */
+  margin-bottom: -10px;
+  margin-right: 5px; /* LTR */
+  padding: 0 5px;
+  text-align: left; /* LTR */
+  width: 185px;
+}
+
+
+/* Forum
+/-------------------------------------------------------------- */
+#forum .description {
+  margin: 5px;
+}
+
+#forum td.created,
+#forum td.posts,
+#forum td.topics,
+#forum td.last-reply,
+#forum td.replies,
+#forum td.pager {
+  white-space: nowrap;
+}
+
+#forum td.posts,
+#forum td.topics,
+#forum td.replies,
+#forum td.pager {
+  text-align: center;
+}
+
+.forum-topic-navigation {
+  padding: 10px 0 0 30px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  text-align: center;
+  padding: 5px;
+}
+
+.forum-topic-navigation .topic-previous {
+  text-align: right; /* LTR */
+  float: left; /* LTR */
+  width: 46%;
+}
+
+.forum-topic-navigation .topic-next {
+  text-align: left; /* LTR */
+  float: right; /* LTR */
+  width: 46%;
+}
+
+
+/* Book
+/-------------------------------------------------------------- */
+.book-navigation .menu {
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding: 10px 0 0 30px;
+}
+.book-navigation .page-links {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  text-align: center;
+  padding: 5px;
+}
+
+
+/* Drupal Messages
+/-------------------------------------------------------------- */
+div.content-messages div.messages,
+div.content-help div.help {
+  border-style: solid;
+  border-width: 6px;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  overflow: hidden;
+  padding: 14px;
+}
+
+div.content-messages-inner div.status {
+  background-color: #EAF8E4;
+  border-color: #8DC478;
+  color: #3E642F;
+}
+
+div.content-messages-inner div.warning {
+  background: #FFFFDD;
+  border-color: #EED300;
+  color: #745500;
+}
+
+div.content-messages-inner div.error {
+  background-color: #FFF2F2;
+  border-color: #CC0000;
+  color: #B20000;
+}
+
+.help,
+div.content-help-inner div.help {
+  background-color: #E4EEF8;
+  border-color: #57718A;
+  color: #292929;
+}
+
+div.messages ul,
+div.content-help .help ul {
+  list-style-position: inside;
+}
+
+div.messages a:link,
+div.messages a:visited,
+.help a:link,
+.help a:visited,
+.help .more-help-link a:link,
+.help .more-help-link a:visited {
+  color: #333;
+  text-decoration: underline;
+}
+
+div.messages a:hover,
+div.messages a:active,
+.help a:hover,
+.help a:active,
+.help .more-help-link a:hover,
+.help .more-help-link a:active,
+div.messages em {
+  color: #333;
+  text-decoration: none;
+}
+
+#content-region ul.tips li {
+  background: transparent;
+  list-style: disc;
+  list-style-image: none;
+  list-style-position: inside;
+}
+
+
+/* Welcome Page
+/-------------------------------------------------------------- */
+#first-time p {
+  clear: both;
+}
+
+
+/* Maintenance Page
+/-------------------------------------------------------------- */
+/* let site name & slogan drop under logo */
+.in-maintenance .page #logo {
+  float: none;
+}
+
+/* default margins for logo and site name */
+.in-maintenance .page .header-site-info {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* default padding with no db */
+.db-offline .page .header-group-inner,
+.db-offline .page .main-inner {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* Poll
+/-------------------------------------------------------------- */
+/* increase default font size and spacing of poll titles */
+.block-poll .poll div.title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+/* Views
+/-------------------------------------------------------------- */
+.view {
+  margin: 0;
+}
+
+/* views form field width limit */
+.views-edit-view input,
+.views-edit-view textarea {
+  max-width: 95%;
+}
+
+/* remove extra bottom margin from last node in view */
+.block-wrapper .block-views .views-row-last .node {
+  margin-bottom: 0;
+}
+
+/* prevent horizontal scrollbar on admin link hover */
+div.view div.views-admin-links {
+  width: auto;
+}
+
+div.view div.views-admin-links li {
+  background: transparent;
+}
+
+/* Reset any list/link styling on views admin links */
+div.view div.views-admin-links ul.links,
+div.view div.views-admin-links ul.links li,
+div.view div.views-admin-links ul.links li a:link,
+div.view div.views-admin-links ul.links li a:visited,
+div.view div.views-admin-links ul.links li a:hover,
+div.view div.views-admin-links ul.links li a:focus {
+  background-image: none;
+  border: 0;
+  display: inline;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+div.view div.views-admin-links ul.links li {
+  list-style: none;
+  list-style-image: none;
+}
+
+div.view div.views-admin-links ul.links li a:link,
+div.view div.views-admin-links ul.links li a:visited {
+  background-color: #fff;
+  color: #000;
+  filter: alpha(opacity=75);
+  -khtml-opacity: 0.75;
+	-moz-opacity: 0.75;
+  opacity: 0.75;
+  padding: 3px;
+}
+
+div.view div.views-admin-links ul.links li a:hover,
+div.view div.views-admin-links ul.links li a:focus {
+  text-decoration: underline;
+}
+
+
+/* Ubercart
+/-------------------------------------------------------------- */
+#cart-form-products,
+.cart-review {
+  border: 0;
+}
+
+#cart-form-buttons,
+#checkout-form-bottom,
+.review-button-row {
+  border: 0;
+}
+
+.product-image {
+  border-left: 0;
+  clear: left;
+  float: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* limit quantity field width */
+.add-to-cart .form-text[name=qty] {
+  width: 25px;
+}
+
+/* category grid products */
+.category-grid-products table {
+  border: none;
+  clear: both;
+  margin: 5px 0;
+  table-layout: fixed;
+}
+
+.category-grid-products table tbody {
+  border-top: none;
+}
+
+.category-grid-products td {
+  background: none;
+  border: none;
+  padding: 5px;
+  vertical-align: top;
+}
+
+.category-grid-products .catalog-grid-image {
+  display: block;
+  margin: 0 0 .5em 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.category-grid-products #edit-qty-wrapper {
+  display: block;
+}
+
+.category-grid-products .form-item label {
+  display: inline;
+}
+
+.category-grid-products .form-item .form-text {
+  margin: 0;
+}
+
+.category-grid-products .catalog-grid-title {
+  display: block;
+  width: 100%;
+}
+
+.catalog-grid-title a {
+  display: block;
+  padding: 10px;
+}
+
+/* center product grids */
+.category td,
+.category-grid-products td,
+.cart-block-summary-table tr.cart-block-summary-tr td {
+  text-align: center;
+}
+
+.uc-price-list_price,
+.uc-price-list {
+  text-decoration: line-through;
+}
+
+
+/* Vertical tabs
+/-------------------------------------------------------------- */
+.vertical-tabs {
+  margin-left: 0;
+}
+
+.vertical-tabs-list {
+  border: none;
+  left: -1.5em;
+}
+
+.vertical-tabs ul li {
+  border-left: none;
+  list-style-image: none;
+}
+
+.vertical-tabs ul li.last {
+  border-bottom: none;
+}
+
+.vertical-tabs-list li a:link,
+.vertical-tabs-list li a:visited,
+.vertical-tabs-list li a:hover,
+.vertical-tabs-list li a:active {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+}
+
+
+/* Quicktabs
+/-------------------------------------------------------------- */
+.quicktabs .block {
+  float: none;   /* keep content in div */
+}
+
+
+/* Views admin links
+/-------------------------------------------------------------- */
+.block div.view div.views-admin-links {
+  margin-top: 0;
+}
+
+
+
+
+/********************* initials ************************/
+
+body{background:#FBFBF9;}
+#page{ background:#f6f5f2; color:#585754; font-family:Arial, Helvetica, sans-serif;font-size:12px; line-height:18px;}
+h1, h2, h3, h4, h5, h6{color:#8c1515;}
+h2, h3, h4, h5, h6{text-transform:uppercase;}
+h3{font-family:Georgia, "Times New Roman", Times, serif;}
+#page h4{font-size:95%; font-weight:normal;}
+a{color:#827252;}
+ul{list-style-type:none;}
+
+#content-inner ul, #sidebar-last ul, #content-bottom-first-inner ul {list-style-type:none; margin-left:0;}
+#content-inner ul li, #sidebar-last ul li, #content-bottom-first-inner ul li{ color:#827252; background:url(../images/list_bg.jpg) no-repeat 0 7px; padding-left:10px;}
+#content-inner .block div.view div.views-admin-links li, #content-inner div.panel-pane div.admin-links li, #content-inner div.view div.views-admin-links ul.links li, #content-inner .views-tabset .views-tabs ul li {background:none; padding:0;}
+
+#content-inner h4{font-weight: normal;text-transform: uppercase;}
+
+table{background:#f2f1eb;}
+tr.even, tr.odd {background-color:transparent; border-bottom: 1px solid #e3e0d5;}
+td{ padding:5px 3px}
+table a, table thead th{color: #8C1515; font-size: 80%; font-weight: normal; text-transform: uppercase;}
+img{max-width:100%;}
+
+/********************* head top ************************/
+#header-site-info {margin-bottom: 1.7em; }
+#logo {float:left;  padding-right: 10px;}
+#site-name-wrapper{float:left;}
+#site-name a{color: #8c1515;  display: block; font-size: 6.5em; line-height: 0.9em;text-transform: uppercase;}
+#slogan{ color: #8C1515; display: block;font-size: 2.2em; line-height: 0.7em;padding-left: 0.1em;text-transform: uppercase;}
+	
+#header{padding-bottom: 4px;padding-top:26px;}
+#header-top-wrapper{background:url(../images/top_headBg.jpg) repeat-x;}
+#header-top{background:url(../images/top_head_shadow.png) no-repeat bottom center; color:#fff; height:38px;}
+#header-top .first {font-size:1.2em;padding-top:9px; text-shadow: -1px -2px 0 #110D0B; text-transform:uppercase;}
+#header-top .last{padding-top:9px;text-align:right;}
+
+#header-top .block, #header-top p{margin:0;}
+
+.header-right-section{ float: right;padding-top: 2px; width: 250px;}
+#block-block-20 .inner{margin: 0;}
+#search .form-text {color: #CDC7BA; float: left; font-size: 11px; height: 23px; line-height:20px; padding-left: 15px; width: 186px;}
+#search .search_submit{font-size: 10px; padding-top: 5px;}
+.header-right-section .block{margin:0;}
+#block-block-19{float:right;width: 150px;}
+#block-block-19 .inner {margin: 0; text-align: right;}
+#block-block-19 li{float:left;padding-left: 4px;width: 21px;}
+
+#search-box{ height:80px;}
+#search-box-inner{background:url(../images/searchBg.png) no-repeat; height:26px;}
+#search-box input{background:none; border:none;}
+#search-box input#image-submit{padding-top:5px;}
+
+.not-front #navigation{ height:78px;margin:0;}
+.front #navigation{margin-bottom: 0.438em;}
+#navigation-inner{background:url(../images/primaryBg.jpg) repeat-x; }
+#navigation ul{margin:0;}
+#navigation a{color:#827252; font-family:Georgia, "Times New Roman", Times, serif; font-size:1.3em; text-transform:uppercase;}
+#navigation .first a{padding-left:0;}
+#navigation a:hover, #navigation a.active{background:url(../images/primaryActive.jpg) repeat-x;}
+.navigation ul li a, .navigation ul li .nolink {padding: 0.5em 0.813em;}
+
+/********************* content ************************/
+#content-bottom-first-inner{padding: 0 10px;}
+#content-bottom-first-inner h4{border-bottom: 4px solid #8C1515; font-family:Georgia, "Times New Roman", Times, serif; font-size: 125%; font-weight:bold; line-height:150%;}
+#content-bottom-first-inner .odd, #content-bottom-first-inner .even {width: 32%;}
+#content-bottom-first-inner .even {padding:0 1.5em 0 1.6em;}
+#content-bottom-first-inner ul{margin-top:1em;}
+.content_img{background:url(../images/img_shadow.png) no-repeat center bottom;padding-bottom: 3px;}
+.content_img img{background:url(../images/img_bg.jpg) repeat-x center bottom #e3dfd5;padding: 5px}
+
+#content-bottom-second-inner{padding: 0 10px;}
+#content-bottom-second-inner .content-bottom-second{ float:left;width:32%;}
+#content-bottom-second-inner #content_bottom_second_two{padding:0 1.5em 0 1.6em;}
+#content-bottom-second-inner  h4{border-top: 4px solid #8C1515; line-height:170%; margin-bottom:1.7em;}
+.newsletter-content{margin-bottom:1em;}
+
+#content_bottom_second_one .views-field-field-image-fid{background:url(../images/img_shadow1.png) no-repeat center bottom;padding-bottom: 3px;float: left;}
+#content_bottom_second_one .views-field-field-image-fid img{background:url(../images/img_bg.jpg) repeat-x center bottom; margin-right: 10px;padding: 5px;}
+#content_bottom_second_one .views-field-title{ font-weight:bold;}
+#content_bottom_second_one .views-row-2 {clear:left;}
+#content_bottom_second_one .views-row{border-top:1px solid #e6e3dc;padding-bottom: 12px; padding-top: 6px;}
+#content_bottom_second_one .views-row-first{border:none; padding-top:0;}
+
+#content_bottom_second_two .views-field-field-image-fid{display: block; float: left;padding-right:1em;	}
+#content_bottom_second_two .views-row {border-top:1px solid #E6E3DC; clear:left;padding-top:10px; padding-bottom:8px;}
+#content_bottom_second_two .views-row-first{border:none; padding-top:0;}
+#content_bottom_second_two .field_title{font-weight:bold;}
+#content_bottom_second_two .author{ font-size:10px;text-transform:uppercase;}
+span.date-display-single{font-size:10px; text-transform:uppercase;}
+
+
+#content_bottom_second_three .first h4 {font-size: 16px; line-height: 110%; margin: 0; padding-bottom: 8px; padding-top: 10px; text-transform: capitalize;}
+#block-block-14  h4{margin-bottom: 0.3em;}
+#block-block-14 ul	{margin:0;}
+#block-block-14 ul li{height: 23px;}
+#block-block-14 ul img{margin-bottom: -3px; margin-right: 5px;}
+
+#postscript-bottom-wrapper{ background:#f2f1eb; height: 172px; padding-top: 32px;}
+#postscript-bottom-inner{padding:0 10px;}
+#postscript-bottom-wrapper h4{text-transform:uppercase; font-size:90%; font-weight:normal; padding-top: 5px;}
+#postscript-bottom-wrapper .block .inner{ border-top:1px solid #d5d0c0; font-size:11px;}
+.not-front #postscript-bottom-wrapper .block .inner{border-top:2px solid #8c1515; }
+#postscript-bottom-wrapper li.leaf, #postscript-bottom-wrapper li.collapsed {list-style-image:none;list-style-type:none;}
+#postscript-bottom-wrapper .block ul{margin:0;}	
+
+#postscript-bottom-wrapper  .grid16-2, #postscript-bottom-wrapper .grid16-6 {width:16.64%;}
+#postscript-bottom-wrapper   ul {list-style-type:none;}
+
+
+/*------------ mobile-postscript-bottom --------------*/
+#mobile-postscript-bottom-wrapper{display:none;}
+
+/*------------ mobile-footer --------------*/
+#mobile-footer-wrapper{display:none;}
+
+/********************* inner-pages ************************/
+/*------------ research --------------*/
+#main-group h1{ font-family:Georgia, "Times New Roman", Times, serif;font-size: 300%; line-height: 48px; text-transform: capitalize;}
+#pid-node-3 #main-group .content_img{float: left;margin-right: 1em; width: 240px;}
+#pid-node-3 #main-group img{width: 229px;}
+
+.layout-first-main-last .grid16-3{width:205px;}
+.layout-first-main-last .grid16-13{width:755px}
+.layout-first-main-last .grid16-10{width:550px;}
+.layout-first-main-last #content-group-inner{margin: 0 20px;}
+
+.layout-first-main-last #content-inner ul li{background:url(../images/red_bullet.png) no-repeat 0 7px;}
+/********************* sidebar-left ************************/
+#sidebar-first .block-menu h4{border-bottom: 1px solid #DAD5CB; border-top: 1px solid #DAD5CB; font-family:Georgia, "Times New Roman", Times, serif; font-size: 12px; font-weight:bold; margin: 0; padding:13px 12px 12px;text-transform: uppercase;}
+#sidebar-last h4{border-top:1px solid #dad5cb; padding-top:5px;}
+
+#sidebar-first .block-menu ul.menu { margin:0;}  
+#sidebar-first .block-menu ul.menu li a{ border-bottom:1px solid #dad5cb; display:block; font-family:Georgia, "Times New Roman", Times, serif;font-size: 95%; font-weight:bold;padding:10px 12px;}
+#sidebar-first .block-menu ul.menu li a.active, #sidebar-first .block-menu ul.menu li a:hover{ background:#fafaf8; color:#8c1515;}
+
+/********************* sidebar-left ************************/
+#sidebar-last .block-menu h4{border-bottom: 1px solid #DAD5CB; border-top: 1px solid #DAD5CB; font-family:Georgia, "Times New Roman", Times, serif; font-size: 12px; font-weight:bold; margin: 0; padding:13px 12px 12px;text-transform: uppercase;}
+
+#sidebar-last h4{border-top:1px solid #dad5cb; padding-top:5px;}
+li.leaf {list-style-image:none; list-style-type: none;}
+#sidebar-last .block-menu ul.menu { margin:0;}  
+#sidebar-last .block-menu ul.menu li{background:none; padding:0;}
+#sidebar-last .block-menu ul.menu li a{ border-bottom:1px solid #dad5cb; display:block; font-family:Georgia, "Times New Roman", Times, serif;font-size: 95%; font-weight:bold;padding:10px 12px;}
+#sidebar-last .block-menu ul.menu li a.active, #sidebar-last .block-menu ul.menu li a:hover{ background:#fafaf8; color:#8c1515;}
+
+/********************* footer ************************/
+#footer-message-wrapper{background:url(../images/footerBg.jpg) repeat-x; font-size:10px; height:116px;}
+#inner-footer-wrapper{background:url(../images/footer_shadow.png) no-repeat top center; padding-top:30px;}
+#footer-message-wrapper .block, #footer-message-wrapper p{margin:0;}
+
+#footer li.leaf, #footer li.collapsed {list-style-image:none;list-style-type:none; text-transform:capitalize;}
+#footer .block ul{margin:0;}
+#footer li{float:left; padding-right:15px;}	
+#footer a{color:#cda0a0;}
+
+#footer-logo{ padding-left:10px;width:138px;}
+#footer-right{width:812px;}
+
+#footer-logo, #footer-right{ color:#cda0a0;float:left;}
+#footer-wrapper, #footer-wrapper .grid16-16, #footer-right .grid16-16{width:822px;}
+
+
+
+
+
+@media screen and  (max-width:600px){
+#page .grid16-16, #grid-mask-overlay .grid16-16 {width: 100%;}
+#skip{display:none;}
+img{max-width:100%;}
+#grid-mask-overlay .row{ margin:0;}
+#grid-mask-overlay .grid16-1 {width: 6.25%;}
+body.not-front, body.front, #page div.full-width {min-width: 100%;}
+
+/*---------- header ------------*/
+#header-top-wrapper .grid16-8 {width: 50%;}
+#logo, .header-right-section, #header #navigation, #block-block-14{display:none;}
+#site-name a{font-size: 2.5em;}
+
+
+/*---------- content ------------*/
+#content-bottom-first-inner .odd, #content-bottom-first-inner .even {width: 100%;}
+#content-bottom-first-inner .even {padding:0;}
+.content_img {float:right;margin-left: 0.5em; max-width:50%;}
+.content_img img{max-width: 95%; padding: 2.5%;}
+#page .block .inner{margin:0;}
+
+#content-bottom-second-inner .content-bottom-second{width:100%;}
+#content-bottom-second-inner #content_bottom_second_two {padding:0;}
+#content_bottom_second_two .views-field-field-image-fid{display: block;    float: left; padding-right: 1em; /*width: 15%;*/}
+#content_bottom_second_one .views-field-field-image-fid img {max-width: 95%;padding: 2.5%;}
+
+.layout-first-main-last .grid16-3 {width: 100%;}
+.layout-first-main-last .grid16-13, .layout-first-main-last .grid16-10 {width:100%;}
+.layout-first-main-last #content-group-inner{margin:0;}
+
+
+.not-front #main-group-inner{padding:0 1em;}
+#pid-node-3 #main-group .content_img {float: left; margin-right: 1em;}
+#pid-node-3 #main-group img {padding: 2.5%; width: 95%;}
+/*---------- mobile-postscript-bottom ------------*/
+#postscript-bottom-wrapper{display:none;}
+
+#mobile-postscript-bottom-wrapper{display:block;}
+#mobile-postscript-bottom ul{width:100%;}
+#mobile-postscript-bottom li{float:none;}
+#mobile-postscript-bottom  #navigation  a { border-bottom:1px solid #dad5cb;}
+#mobile-postscript-bottom  #navigation .first a {padding:0.5em 0.813em;}
+#mobile-postscript-bottom  #navigation a:hover, #mobile-postscript-bottom  #navigation a.active {background:none;}
+#mobile-postscript-bottom  #navigation .last a{border:none;}
+.not-front #mobile-postscript-bottom #navigation{height:auto;}
+
+/*---------- footer ------------*/
+#footer-right{width:71%;}
+#footer li{background:url(../images/devider.jpg) no-repeat right; padding:0 1em;}
+#footer-logo { display:none;}
+#footer-message{padding-left:1em;}
+/*---------- mobile-footer ------------*/
+#mobile-footer-wrapper{display:block;}
+#mobile-footer-wrapper #search-box { float: none; height: auto; margin: 0 auto; padding: 1em 0; width:250px;}
+}

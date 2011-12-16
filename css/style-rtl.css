@@ -1,0 +1,86 @@
+/* $Id: style-rtl.css,v 1.1.2.4 2010/04/08 07:02:59 sociotech Exp $ */
+
+body {
+  direction: rtl;
+}
+
+ul, ol, dd {
+  margin-left: 0;
+  margin-right: 2em;
+}
+
+.nested {
+  float: right;
+}
+
+/* sidebar layouts */
+.sidebars-both-first .content-group {
+  float: left;
+}
+
+.sidebars-both-last .sidebar-first {
+  float: left;
+}
+
+#site-name-wrapper {
+  float: right;
+}
+
+.block ul,
+.block ol {
+  margin-left: 0;
+  margin-right: 2em;
+}
+
+.block ul.links {
+  margin-right: 0;
+}
+
+/* remove left margin from primary menu list */
+#primary-menu.block ul {
+  margin-right: 0;
+}
+
+/* float right */
+.primary-menu ul li {
+  float: right;
+}
+
+.secondary-menu-inner ul.links {
+  margin-right: 0;
+}
+
+
+
+
+.block {
+  float: right;
+}
+
+
+.profile dt {
+  float: right;
+  margin-left: 5px;
+  text-align: right;
+}
+
+.forum-topic-navigation .topic-previous {
+  text-align: left;
+  float: right;
+}
+
+.forum-topic-navigation .topic-next {
+  text-align: right;
+  float: left;
+}
+
+/* User Login Form
+/-------------------------------------------------------------- */
+#user-login-form {
+  text-align: right;
+}
+
+#user-login-form .item-list ul {
+  margin-right: 0;
+}
+
