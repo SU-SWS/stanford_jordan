@@ -1,207 +1,121 @@
-<?php
-// $Id: page.tpl.php,v 1.1.2.5 2010/04/08 07:02:59 sociotech Exp $
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="<?php print $language->language; ?>" xml:lang="<?php print $language->language; ?>">
-
+<!DOCTYPE html>
+<html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php print $head_title; ?></title>
-  <?php print $head; ?>
-  <?php print $styles; ?>
-  <?php print $setting_styles; ?>
-  <!--[if IE 8]>
-  <?php print $ie8_styles; ?>
-  <![endif]-->
-  <!--[if IE 7]>
-  <?php print $ie7_styles; ?>
-  <![endif]-->
-  <!--[if lte IE 6]>
-  <?php print $ie6_styles; ?>
-  <![endif]-->
-  <?php print $local_styles; ?>
-  <?php print $scripts; ?>
-  
+<title><?php print $head_title ?></title>
+<?php print $head ?><?php print $styles ?>
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="<?php print base_path() . path_to_theme(); ?>/css/ie7.css"><![endif]-->
+<?php print $scripts ?>
 </head>
-
-<body id="<?php print $body_id; ?>" class="<?php print $body_classes; ?>">
-  <div id="page" class="page">
-    <div id="page-inner" class="page-inner">
-      <div id="skip">
-        <a href="#main-content-area"><?php print t('Skip to Main Content Area'); ?></a>
+<body class="<?php print $body_classes; ?><?php stanford_wilbur_body_class($left, $right, $frontside); ?>">
+<div id="skipnav">
+  <p>Skip to:</p>
+  <ul>
+    <li><a href="#content">Main Content</a></li>
+  </ul>
+</div>
+<!-- /#skipnav -->
+<div id="layout">
+  <div id="global-header">
+    <div class="wrapper clear-block">
+      <div id="top-logo"><a href="http://www.stanford.edu"><img src="<?php print base_path() . path_to_theme(); ?>/images/header-stanford-logo.png" width="198" height="11" alt="Stanford University" /></a></div>
+      <?php if ($header): ?>
+      <div id="top-menu"><?php print $header; ?></div>
+      <?php endif; ?>
+    </div>
+  </div>
+  <!-- /#global-header -->
+  <div id="container">
+    <div class="wrapper clear-block">
+      <div id="header" role="banner" class="clear-block">
+        <?php if ($logo): ?>
+        <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" /></a> </div>
+        <?php endif; ?>
+        <div id="site">
+          <?php if ($site_name): ?>
+          <div id="name">
+            <h1><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><?php print $site_name; ?></a></h1>
+          </div>
+          <?php endif; ?>
+          <?php if ($site_slogan): ?>
+          <div id="slogan"> <?php print $site_slogan; ?> </div>
+          <?php endif; ?>
+        </div>
+        <?php if($search_box): ?>
+        <div id="search" role="search"> <?php print $search_box; ?> </div>
+        <?php endif; ?>
       </div>
-
-      <!-- header-top row: width = grid_width -->
-      <?php print theme('grid_row', $header_top, 'header-top', 'full-width', $grid_width); ?>
-
-      <!-- header-group row: width = grid_width -->
-      <div id="header" class="header full-width">
-        <div id="header-group" class="header-group row <?php print $grid_width; ?>">
-          <div id="header-group-inner" class="header-group-inner inner clearfix">
-            <?php print theme('grid_block', theme('links', $secondary_links), 'secondary-menu'); ?>
-
-
-            <?php if ($logo || $site_name || $site_slogan): ?>
-            <div id="header-site-info" class="header-site-info block">
-              <div id="header-site-info-inner" class="header-site-info-inner inner">
-                <?php if ($logo): ?>
-                <div id="logo">
-                  <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-                </div>
-                <?php endif; ?>
-                <?php if ($site_name || $site_slogan): ?>
-                <div id="site-name-wrapper" class="clearfix">
-                  <?php if ($site_slogan): ?>
-                  <span id="slogan"><?php print $site_slogan; ?></span>
-                  <?php endif; ?>
-                  
-                  <?php if ($site_name): ?>
-                  <span id="site-name"><a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></span>
-                  <?php endif; ?>
-                </div><!-- /site-name-wrapper -->
-                <?php endif; ?>
-              </div><!-- /header-site-info-inner -->
-            </div><!-- /header-site-info -->
-            <?php endif; ?>
-            <div class="header-right-section">
-				<?php print theme('grid_block', $search_box, 'search-box'); ?>
-                <?php print theme('grid_block', $header_right, 'header-right'); ?>
-            
-            </div><!-- /header-right-section -->
-            <?php print $header; ?>
-            <?php print theme('grid_block', $primary_links_tree, 'navigation'); ?>
-          </div><!-- /header-group-inner -->
-        </div><!-- /header-group -->
-      </div><!-- /header-group-wrapper -->
-
-      <!-- preface-top row: width = grid_width -->
-      <?php print theme('grid_row', $preface_top, 'preface-top', 'full-width', $grid_width); ?>
-
-      <!-- main row: width = grid_width -->
-      <div id="main-wrapper" class="main-wrapper full-width">
-        <div id="main" class="main row <?php print $grid_width; ?>">
-          <div id="main-inner" class="main-inner inner clearfix">
-            <?php print theme('grid_row', $sidebar_first, 'sidebar-first', 'nested', $sidebar_first_width); ?>
-
-            <!-- main group: width = grid_width - sidebar_first_width -->
-            <div id="main-group" class="main-group row nested <?php print $main_group_width; ?>">
-              <div id="main-group-inner" class="main-group-inner inner">
-                <?php print theme('grid_row', $preface_bottom, 'preface-bottom', 'nested'); ?>
-
-                <div id="main-content" class="main-content row nested">
-                  <div id="main-content-inner" class="main-content-inner inner">
-                    <!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) -->
-                    <div id="content-group" class="content-group row nested <?php print $content_group_width; ?>">
-                      <div id="content-group-inner" class="content-group-inner inner">
-                        <?php print theme('grid_block', $breadcrumb, 'breadcrumbs'); ?>
-
-                        <?php if ($content_top || $help || $messages): ?>
-                        <div id="content-top" class="content-top row nested">
-                          <div id="content-top-inner" class="content-top-inner inner">
-                            <?php print theme('grid_block', $help, 'content-help'); ?>
-                            <?php print theme('grid_block', $messages, 'content-messages'); ?>
-                            <?php print $content_top; ?>
-                          </div><!-- /content-top-inner -->
-                        </div><!-- /content-top -->
-                        <?php endif; ?>
-
-                        <div id="content-region" class="content-region row nested">
-                          <div id="content-region-inner" class="content-region-inner inner">
-                            <a name="main-content-area" id="main-content-area"></a>
-                            <?php print theme('grid_block', $tabs, 'content-tabs'); ?>
-                            <div id="content-inner" class="content-inner block">
-                              <div id="content-inner-inner" class="content-inner-inner inner">
-                                <?php if ($title): ?>
-                                <h1 class="title"><?php print $title; ?></h1>
-                                <?php endif; ?>
-                                <?php if ($content): ?>
-                                <div id="content-content" class="content-content">
-                                  <?php print $content; ?>
-                                  <?php print $feed_icons; ?>
-                                </div><!-- /content-content -->
-                                <?php endif; ?>
-                              </div><!-- /content-inner-inner -->
-                            </div><!-- /content-inner -->
-                          </div><!-- /content-region-inner -->
-                        </div><!-- /content-region -->
-
-                        <?php print theme('grid_row', $content_bottom, 'content-bottom', 'nested'); ?>
-                      </div><!-- /content-group-inner -->
-                    </div><!-- /content-group -->
-
-                    <?php print theme('grid_row', $sidebar_last, 'sidebar-last', 'nested', $sidebar_last_width); ?>
-                  </div><!-- /main-content-inner -->
-                </div><!-- /main-content -->
-
-                <?php print theme('grid_row', $postscript_top, 'postscript-top', 'nested'); ?>
-              </div><!-- /main-group-inner -->
-            </div><!-- /main-group -->
-          </div><!-- /main-inner -->
-        </div><!-- /main -->
-      </div><!-- /main-wrapper -->
-
-      <!-- content-bottom-first: width = grid_width -->
-      <?php print theme('grid_row', $content_bottom_first, 'content-bottom-first', 'full-width', $grid_width); ?>
-
-      <!-- content-bottom-second row: width = grid_width -->
-      <?php /*?><?php print theme('grid_row', $content_bottom_second, 'content-bottom-second', 'full-width', $grid_width); ?><?php */?>
-
-    <div class="content-bottom-second-wrapper full-width" id="content-bottom-second-wrapper">
-    <div class="content-bottom-second row grid16-16" id="content-bottom-second">
-    <div class="content-bottom-second-inner inner clearfix" id="content-bottom-second-inner">
-          <div id="content_bottom_second_one" class="content-bottom-second">
-           <?php print theme('grid_row', $content_bottom_second_one, 'content-bottom-second-one'); ?>
-          </div>
-    
-          <div id="content_bottom_second_two" class="content-bottom-second">
-           <?php print theme('grid_row', $content_bottom_second_two, 'content-bottom-second-two'); ?>
-          </div>
-    
-          <div id="content_bottom_second_three" class="content-bottom-second">
-           <?php print theme('grid_row', $content_bottom_second_three, 'content-bottom-second-three'); ?>
-          </div>
-          
-    </div></div></div>
-
-      <!-- postscript-bottom row: width = grid_width -->
-      <?php print theme('grid_row', $postscript_bottom, 'postscript-bottom', 'full-width', $grid_width); ?>
-
-      <!-- mobile-postscript-bottom row: width = grid_width -->
-    <div class="mobile-postscript-bottom-wrapper full-width" id="mobile-postscript-bottom-wrapper">
-    <div class="mobile-postscript-bottom row grid16-16" id="mobile-postscript-bottom">
-    <div class="mobile-postscript-bottom-inner inner clearfix" id="mobile-postscript-bottom-inner">
-            <?php print theme('grid_block', $primary_links_tree, 'navigation'); ?>
-    </div></div></div>
-
-      <!-- footer row: width = grid_width -->
-      <?php //print theme('grid_row', $footer, 'footer', 'full-width', $grid_width); ?>
-
-      <!-- footer-message row: width = grid_width -->
-      <div id="footer-message-wrapper" class="footer-message-wrapper full-width">
-      <div id="inner-footer-wrapper" class="grid16-16 row">
-      <?php print theme('grid_row', $footer_logo, 'footer-logo'); ?>
-      <div id="footer-right" >
-		  <?php print theme('grid_row', $footer, 'footer' ); ?>
-            <div id="footer-message" class="footer-message row<?php //print $grid_width; ?>">
-              <div id="footer-message-inner" class="footer-message-inner inner clearfix">
-              
-                <?php print theme('grid_block', $footer_message, 'footer-message-text'); ?>
-              </div><!-- /footer-message-inner -->
-            </div><!-- /footer-message -->
-        </div><!-- /footer-right -->
-        </div><!-- /inner-footer-wrapper -->
-      </div><!-- /footer-message-wrapper -->
-      
-      <!-- mobile-footer-row row: width = grid_width -->
-    <div class="mobile-footer-wrapper full-width" id="mobile-footer-wrapper">
-    <div class="mobile-footer row grid16-16" id="mobile-footer">
-    <div class="mobile-footer-inner inner clearfix" id="mobile-footer-inner">
-				<?php print theme('grid_block', $search_box, 'search-box'); ?>
-    </div></div></div>
-
-
-
-    </div><!-- /page-inner -->
-  </div><!-- /page -->
-  <?php print $closure; ?>
+      <!-- /header -->
+      <div id="navigation" role="navigation" class="clear-block">
+        <?php if (isset($primary_links)): ?>
+        <?php print theme('links', $primary_links, array('class' => 'links primary-links')) ?>
+        <?php endif; ?>
+      </div>
+      <!-- /#navigation -->
+      <?php if ($top): ?>
+      <div id="top"><?php print $top ?></div>
+      <?php endif; ?>
+      <div id="content" class="clear-block">
+        <div id="main" role="main">
+          <?php if ($upper): ?>
+          <div id="upper"><?php print $upper ?></div>
+          <?php endif; ?>
+          <?php if ($title): print '<h1 class="title'. ($tabs ? ' with-tabs' : '') .'">'. $title .'</h1>'; endif; ?>
+          <?php if ($mission): print '<div id="mission">'. $mission .'</div>'; endif; ?>
+          <?php if ($show_messages && $messages): print $messages; endif; ?>
+          <?php if ($tabs): print '<div id="tabs-wrapper" class="clear-block">'; endif; ?>
+          <?php if ($tabs): print '<ul class="tabs primary">'. $tabs .'</ul>'; endif; ?>
+          <?php if ($tabs2): print '<ul class="tabs secondary">'. $tabs2 .'</ul>'; endif; ?>
+          <?php if ($tabs): print '</div>'; endif; ?>
+          <?php if ($feature): ?>
+          <div id="feature"><?php print $feature ?></div>
+          <?php endif; ?>
+          <?php print $help; ?> <?php print $content ?> </div>
+        <!-- /#main -->
+        <?php if ($left): ?>
+        <div id="sidebar-left"><?php print $left; ?></div>
+        <!-- /#sidebar-left -->
+        <?php endif; ?>
+        <?php if ($right): ?>
+        <div id="sidebar-right"><?php print $right; ?></div>
+        <!-- /#sidebar-right -->
+        <?php endif; ?>
+      </div>
+      <!-- /#main -->
+      <?php if ($bottom): ?>
+      <div id="bottom"><?php print $bottom ?></div>
+      <?php endif; ?>
+      <div id="footer" role="contentinfo" class="clear-block">
+        <?php if (isset($secondary_links)): ?>
+        <?php $linknum = count($secondary_links); print '<div id="navigation-secondary" role="navigation" class="clear-block across-' . $linknum . '">'; $menu_name = variable_get('menu_secondary_links_source', 'secondary-links'); print menu_tree($menu_name); print '</div>'; ?>
+        <?php endif; ?>
+        <?php if ($footer): ?>
+        <?php print $footer ?>
+        <?php endif; ?>
+        <?php print $footer_message ?> </div>
+      <!-- /#footer --> 
+    </div>
+  </div>
+  <!-- /#container -->
+  <div id="global-footer">
+    <div class="wrapper clear-block">
+      <div id="bottom-logo"> <a href="http://www.stanford.edu"><img src="<?php print base_path() . path_to_theme(); ?>/images/footer-stanford-logo.png" alt="Stanford University" /></a> </div>
+      <div id="bottom-text">
+        <div id="bottom-menu" class="clear-block">
+          <ul>
+            <li><a href="http://www.stanford.edu">Stanford University Home</a></li>
+            <li><a href="http://visit.stanford.edu/plan/maps.html">Maps &amp; Directions</a></li>
+            <li><a href="http://www.stanford.edu/search/">Search Stanford</a></li>
+            <li><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
+            <li><a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a></li>
+          </ul>
+        </div>
+        <p class="vcard">&copy; <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span>. <span class="tel">(650) 723-2300</span></span></p>
+      </div>
+    </div>
+  </div>
+  <!-- /#global-footer --> 
+</div>
+<!-- /#layout --> 
+<?php print $closure ?>
 </body>
 </html>

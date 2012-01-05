@@ -1,17 +1,8 @@
-<?php
-// $Id: block.tpl.php,v 1.1.2.2 2010/04/16 21:09:14 sociotech Exp $
-?>
-
-<div id="block-<?php print $block->module .'-'. $block->delta; ?>" class="block block-<?php print $block->module ?> <?php print $block_zebra; ?> <?php print $position; ?> <?php print $skinr; ?>">
-  <div class="inner clearfix">
-    <?php if (isset($edit_links)): ?>
-    <?php print $edit_links; ?>
-    <?php endif; ?>
-    <?php if ($block->subject): ?>
-    <h4 class="title block-title"><?php print $block->subject ?></h4>
-    <?php endif;?>
-    <div class="content clearfix">
-      <?php print $block->content ?>
-    </div>
-  </div><!-- /block-inner -->
-</div><!-- /block -->
+<div id="block-<?php print $block->module .'-'. $block->delta; ?>" class="block block-<?php print $block->module ?><?php print $block->extraclass; ?>">
+	<?php if (!empty($block->subject)): ?>
+		<h3><?php print $block->subject ?></h3>
+	<?php endif;?>
+	<div class="content">
+		<?php print $block->content ?>
+	</div>
+</div>
