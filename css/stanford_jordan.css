@@ -2,7 +2,7 @@ body {color: #2e2d29; font: 0.78em Arial, Helvetica, sans-serif; margin: 0px; pa
 
 /* TYPOGRAPHY ------------------------------------------------------------*/
 
-h1, h2, h3, h4, h5, h6 {font-family: Arial, Helvetica, sans-serif; font-weight: normal; line-height: 1em; margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-family: Georgia, "Times New Roman", Times, serif; font-weight: normal; line-height: 1em; margin: 0; padding: 0; color: #8c1515;}
 h1 {font-size: 3em; text-transform: uppercase;}
 h2 {font-size: 2em; margin: 0 0 1em 0;}
 h3 {font-size: 1.25em; margin: 0 0 1em 0;}
@@ -112,24 +112,24 @@ img {max-width: 100%;}
 #top-menu ul li.last {border: none;}
 #top-menu h3 {display: none;}
 
-#container {width: 100%; background-color: #fbfbf9; line-height: 1.4em; padding-top: 20px;}
+#container {width: 100%; background-color: #f4f3ef; line-height: 1.4em; padding-top: 20px;}
 
 #header {padding-bottom: 35px;}
 #header #logo {float: left; margin-right: 10px;}
 #header #site {float: left;}
-#header #site h1 {font-size: 3em; line-height: 1em; margin: 0.7em 0; text-transform: uppercase; font-stretch: condensed;}
-#header #site h1 a {color: #3f3c30;}
+#header #site h1 {font-size: 5em; margin: 0; text-transform: uppercase;}
+#header #site h1 a {color: #8c1515;}
 #header #search {float: right; background-color: #f2f1eb; height: 26px; width: 214px; overflow: hidden; margin-top: 24px; padding: 5px; line-height: 0; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
 #header #search .search-item {float: left;}
 #header #search .form-text {border: none; color: #827252; height: 26px; width: 183px; margin: 0; padding: 0 0 0 5px;}
 #header #search .search-submit {border: none; height: 26px; width: 26px; background: url(../images/searchbutton.png) center center no-repeat; cursor: pointer;}
 #header #search label {position: absolute; left: -1000em; width: 20em; text-align: left;}
 
-#navigation {margin-bottom: 35px;}
-#navigation ul li {margin: 0; padding: 0;}
-#navigation ul li a {font-size: 1.166em; color: #8c1515; padding: 6px 10px; margin: 0; text-transform: uppercase;}
-#navigation ul li a:hover {background: #f2f1eb; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
-#navigation ul li a.active {background: #f2f1eb; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+#navigation {margin-bottom: 35px; border-top: 1px solid #dad5cb; padding: 0px;}
+#navigation ul li {margin: 0; padding: 0 1.6em 0 0;}
+#navigation ul li a {display: inline-block; font-size: 1.166em; color:#827252; font-family:Georgia, "Times New Roman", Times, serif; text-transform:uppercase; margin-top: -1px; padding: 10px 0 0 0; border-top: 1px solid #dad5cb;}
+#navigation ul li a:hover {border-top: 1px solid #827252;}
+#navigation ul li a.active {border-top: 1px solid #827252;}
 
 #footer {margin: 40px 20px;}
 
