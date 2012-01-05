@@ -1,6 +1,6 @@
-Version 6.x-1.1 2011-11-30
+Version 6.x-1.1 2012-01-05
 ------------------------------
-by hyperboy: Add additional theme regions
+by hyperboy: Standardize file names
 
 Version 6.x-1.0
 ------------------------------
