@@ -7,7 +7,7 @@
  * @return
  *   array A form array.
  */
-function stanford_wilbur_settings($saved_settings) {
+function stanford_jordan_settings($saved_settings) {
   /*
    * The default values for the theme variables. Make sure $defaults exactly
    * matches the $defaults in the template.php file.

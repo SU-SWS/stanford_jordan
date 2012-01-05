@@ -3,11 +3,11 @@ Stanford Jordan Theme for Drupal 6.x
 -- SUMMARY -- 
 
 Authors: Brian Young
-The Stanford Wilbur Drupal theme is recommended for department and official group sites.
+The Stanford Jordan Drupal theme is recommended for department and official group sites.
 
 -- REQUIREMENTS --
 
-The Stanford Wilbur Drupal theme is intended for Drupal versions 6 only; it will not work with Drupal 5 or below.
+The Stanford Jordan Drupal theme is intended for Drupal versions 6 only; it will not work with Drupal 5 or below.
 
 -- INSTALLATION --
 

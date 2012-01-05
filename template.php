@@ -33,7 +33,7 @@ if (is_null(theme_get_setting('icon_classes'))) {
 /**
  * Override or insert variables into the page templates.
  */
-function stanford_wilbur_preprocess_page(&$vars) {
+function stanford_jordan_preprocess_page(&$vars) {
   //Adding body classes
   $theme_layout = theme_get_setting('layout_classes');
   $color_layout = theme_get_setting('color_classes');
@@ -60,7 +60,7 @@ function stanford_wilbur_preprocess_page(&$vars) {
 /**
  * Left and right sidebar body classes
  */
-function stanford_wilbur_body_class($left, $right, $frontside) {
+function stanford_jordan_body_class($left, $right, $frontside) {
   if ($left != '' && $right != '') {
     $sideclass = 'sidebars';
   }
@@ -83,7 +83,7 @@ function stanford_wilbur_body_class($left, $right, $frontside) {
 /**
  * Add "last" class to blocks within regions
  */
-function stanford_wilbur_blocks($region) {
+function stanford_jordan_blocks($region) {
   $output = '';
   if ($list = block_list($region)) {
     $blockcounter = 1;
@@ -102,7 +102,7 @@ function stanford_wilbur_blocks($region) {
   $output .= drupal_get_content($region);
   return $output;
 }
-function stanford_wilbur_preprocess_block(&$vars){
+function stanford_jordan_preprocess_block(&$vars){
   $vars['classes'] .= $vars['block']->extraclass;
 }
 
@@ -110,7 +110,7 @@ function stanford_wilbur_preprocess_block(&$vars){
  * Allow themable wrapping of all comments.
  */
 
-function stanford_wilbur_comment_wrapper($content, $node) {
+function stanford_jordan_comment_wrapper($content, $node) {
   if (!$content || $node->type == 'forum') {
     return '<div id="comments">'. $content .'</div>';
   }
@@ -125,11 +125,11 @@ function stanford_wilbur_comment_wrapper($content, $node) {
  * them as tabs. Overridden to split the secondary tasks.
  */
 
-function stanford_wilbur_menu_local_tasks() {
+function stanford_jordan_menu_local_tasks() {
   return menu_primary_local_tasks();
 }
 
-function stanford_wilbur_comment_submitted($comment) {
+function stanford_jordan_comment_submitted($comment) {
   return t('by <strong>!username</strong> | !datetime',
     array(
       '!username' => theme('username', $comment),
@@ -137,7 +137,7 @@ function stanford_wilbur_comment_submitted($comment) {
     ));
 }
 
-function stanford_wilbur_node_submitted($node) {
+function stanford_jordan_node_submitted($node) {
   return t('by <strong>!username</strong> | !datetime',
     array(
       '!username' => theme('username', $node),

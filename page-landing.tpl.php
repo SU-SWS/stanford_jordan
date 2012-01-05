@@ -6,7 +6,7 @@
 <!--[if IE 7]><link rel="stylesheet" type="text/css" href="<?php print base_path() . path_to_theme(); ?>/css/ie7.css"><![endif]-->
 <?php print $scripts ?>
 </head>
-<body class="<?php print $body_classes; ?><?php stanford_wilbur_body_class($left, $right, $frontside); ?>">
+<body class="<?php print $body_classes; ?><?php stanford_jordan_body_class($left, $right, $frontside); ?>">
 <div id="skipnav">
   <p>Skip to:</p>
   <ul>
