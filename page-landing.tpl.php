@@ -74,18 +74,23 @@
           <?php print $content ?> </div>
         <!-- /#landing-main --> 
       </div>
-      <!-- /#content -->
-      <div id="footer" role="contentinfo" class="clear-block">
-        <?php if ($footer): ?>
-        <?php print $footer ?>
-        <?php endif; ?>
-        <?php print $footer_message ?>
-        <?php if (isset($secondary_links)): ?>
-        <?php $linknum = count($secondary_links); print '<div id="navigation-secondary" role="navigation" class="across-' . $linknum . '">'; $menu_name = variable_get('menu_secondary_links_source', 'secondary-links'); print menu_tree($menu_name); print '</div>'; ?>
-        <?php endif; ?>
-      </div>
-      <!-- /#footer --> 
+      <!-- /#content --> 
     </div>
+    <div id="footer-section" class="clear-block">
+      <div class="wrapper">
+        <div id="footer" role="contentinfo" class="clear-block">
+          <?php if ($footer): ?>
+          <?php print $footer ?>
+          <?php endif; ?>
+          <?php print $footer_message ?>
+          <?php if (isset($secondary_links)): ?>
+          <?php $linknum = count($secondary_links); print '<div id="navigation-secondary" role="navigation" class="across-' . $linknum . '">'; $menu_name = variable_get('menu_secondary_links_source', 'secondary-links'); print menu_tree($menu_name); print '</div>'; ?>
+          <?php endif; ?>
+        </div>
+        <!-- /#footer --> 
+      </div>
+    </div>
+    <!-- /#footer-section --> 
   </div>
   <!-- /#container -->
   <div id="global-footer">
