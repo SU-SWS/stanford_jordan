@@ -72,45 +72,10 @@ fieldset legend {color: #333333;}
 .form-submit {margin-bottom: 1em;}
 .description {margin-top: 0.5em;}
 
-/* DRUPAL ADMIN STYLES ------------------------------------------------------------*/
-
-.messages, div.error, div.warning {border: none; background: #d0efc1; margin-top: 20px; padding: 20px;}
-div.error {background: #f7cccc;}
-div.warning {background: #f6f6c4;}
-
-div.admin .left,
-div.admin .right {margin: 0; width: 47%;}
-
-#tabs-wrapper {margin-top: 20px;}
-ul.tabs.primary {border-bottom: 1px solid #bab19e; margin: 0px; padding: 7px 5px 6px 10px;}
-ul.tabs.primary li {margin: 0; padding: 7px 5px 7px 0;}
-ul.tabs.primary li a {background: #eae9e3; border: 1px solid #bab19e; margin: 0; padding: 7px 15px; border-bottom: none;}
-ul.tabs.primary li.active a {background: #fbfbf9;}
-ul.tabs.secondary {border-bottom: 1px solid #bab19e; margin: 0; padding: 10px 0;}
-ul.tabs.secondary li {border: none; margin: 0; padding: 5px 5px 10px 0;}
-ul.tabs.secondary li a {background: none; margin: 0; padding: 10px 12px;}
-ul.tabs.secondary li.active a {color: #8c1515; border-bottom: 3px solid #8c1515; padding-bottom: 9px;}
-
-.help {border-bottom: 1px solid #e9e6df; padding-bottom: 10px; margin-top: 20px;}
-.block-region {color: #000000;}
-
-.node {margin-top: 20px;}
-
-form#system-themes-form {overflow: auto;}
-
 /* GENERAL LAYOUT ------------------------------------------------------------*/
 #skipnav {position: absolute; left: -1000em; width: 20em; text-align: left;}
 img {max-width: 100%;}
 .wrapper {width: 940px; margin: auto;}
-
-#global-header {background-color: #8c1515; background-image: url(../images/header-bg.png); background-position: bottom center; background-repeat: no-repeat; color: #ffffff; padding: 10px 0 10px 0; width: 100%;}
-#top-logo {width: 198px; float: left;}
-#top-menu {float: right;}
-#top-menu a {color: #ffffff;}
-#top-menu ul {margin: 0; padding: 0; line-height: 1em;}
-#top-menu ul li {float: left; list-style: none; margin: 0 0 0 1em; padding: 0 0 0 1em;}
-#top-menu ul li.last {border: none;}
-#top-menu h3 {display: none;}
 
 #container {width: 100%; background-color: #fbfcf9; line-height: 1.4em; padding-top: 20px;}
 
@@ -123,41 +88,19 @@ img {max-width: 100%;}
 #header #search {float: right; height: 26px; overflow: hidden; margin: 0px; padding: 5px; line-height: 0;}
 #header #search .search-item {float: left;}
 #header #search .form-text {border: none; color: #827252; border: 1px solid #cecdc3; border-right: 0px; border-bottom: 1px solid #ebece4; height: 26px; width: 183px; margin: 0; padding: 0 0 0 10px; -moz-border-radius-topleft: 15px; -webkit-border-radius-topleft: 15px; border-top-left-radius: 15px; -moz-border-radius-bottomleft: 15px; -webkit-border-radius-bottomleft: 15px; border-bottom-left-radius: 15px;}
-#header #search .search-submit {display: block; border: 1px solid #cecdc3; border-left: 0px; border-bottom: 1px solid #ebece4; height: 28px; width: 26px; background: url(../images/searchbutton.png) center center no-repeat; cursor: pointer; -moz-border-radius-topright: 15px; -webkit-border-radius-topright: 15px; border-top-right-radius: 15px; -moz-border-radius-bottomright: 15px; -webkit-border-radius-bottomright: 15px; border-bottom-right-radius: 15px;}
-#header #search label {position: absolute; left: -1000em; width: 20em; text-align: left;}
+#header #search .search-submit {display: block; border: 1px solid #cecdc3; border-left: 0px; border-bottom: 1px solid #ebece4; height: 28px; width: 26px; -moz-border-radius-topright: 15px; -webkit-border-radius-topright: 15px; border-top-right-radius: 15px; -moz-border-radius-bottomright: 15px; -webkit-border-radius-bottomright: 15px; border-bottom-right-radius: 15px;}
 
-#navigation {margin-bottom: 35px; border-top: 1px solid #dad5cb; padding: 0px;}
+#navigation {border-top: 1px solid #dad5cb; padding: 0px;}
 #navigation ul li {margin: 0; padding: 0 1.6em 0 0;}
-#navigation ul li a {display: inline-block; font-size: 1.166em; color:#827252; font-family:Georgia, "Times New Roman", Times, serif; text-transform:uppercase; margin-top: -1px; padding: 10px 0 0 0; border-top: 1px solid #dad5cb;}
+#navigation ul li a {display: inline-block; color:#827252; font-family:Georgia, "Times New Roman", Times, serif; text-transform:uppercase; margin-top: -1px; padding: 10px 0 0 0; border-top: 1px solid #dad5cb;}
 #navigation ul li a:hover {border-top: 1px solid #827252;}
 #navigation ul li a.active {border-top: 1px solid #827252;}
 
 #footer-section {background: #f2f1eb;}
 #footer {margin: 0px; padding: 30px 0px 40px 0px; background: #f2f1eb;}
 
-#navigation-secondary ul {margin: 0; list-style: none;}
-#navigation-secondary ul li {border-top: 1px solid #d4d1c5; float: left; margin: 0 20px 0 0; list-style: none; padding-top: 3px;}
-#navigation-secondary ul li.last {margin: 0;} 
-#navigation-secondary ul li.expanded {padding-right: 0;}
-#navigation-secondary ul li.leaf {padding-right: 0;}
-#navigation-secondary ul li a {color: #8c1515; font-size: 0.8333em; font-weight: normal; line-height: 2em; text-transform: uppercase;}
-#navigation-secondary ul li ul li {border: none; clear: both;}
-#navigation-secondary ul li ul li.leaf {padding-top: 0;}
-#navigation-secondary ul li ul li a {color: #827252; font-size: 1em; font-weight: normal; line-height: 1em; text-transform: none;}
-#navigation-secondary.across-1 ul li {width: 940px;}
-#navigation-secondary.across-2 ul li {width: 460px;}
-#navigation-secondary.across-3 ul li {width: 300px;}
-#navigation-secondary.across-4 ul li {width: 220px;}
-#navigation-secondary.across-5 ul li {width: 172px;}
-#navigation-secondary.across-6 ul li {width: 140px;}
-
-#global-footer {background-color: #8c1515; background-image: url(../images/footer-bg.png); background-position: top center; background-repeat: no-repeat; color: #e3dfd5; font-size: 0.9em; line-height: 1em; padding: 30px 0 60px 0; width: 100%;}
-#bottom-logo {float: left; padding: 0 20px 0 20px; width: 119px;}
-#bottom-text {float: left;}
-#bottom-menu {margin: 0 0 0.4em 0;}
-#bottom-menu a {color: #e3dfd5;}
-#bottom-menu ul {margin: 0; padding: 0; line-height: 1em;}
-#bottom-menu ul li {float: left; list-style: none; margin: 0 1em 0 0; padding: 0 1em 0 0;}
+#navigation-secondary ul li {border-top: 1px solid #d4d1c5;}
+#navigation-secondary ul li a {font-weight: normal;}
 
 /* Front page */
 body.front #content {margin: 0px; padding: 0px;}
@@ -411,26 +354,3 @@ body.dark.node-type-landing #landing-region4 .block {border: none; background: #
 .dark .article-box.style1 {border-color: #43423e;}
 .dark .article-box.style2 {border-color: #43423e;}
 .dark .article-box.style3 {border-color: #43423e;}
-
-/* HELPER CLASSES ------------------------------------------------------------*/
-
-.red {color: #8c1515;}
-.sand {color: #827252;}
-.left {float: left; margin-right: 10px;}
-.right {float: right; margin-left: 10px;}
-.lined {border-bottom: 4px solid #d2d2cf; padding: 0 0 1px 0;}
-.img-description {font-size: 0.833em;}
-.spacer {margin-top: 30px;}
-.clear-block {} /* Already defined by drupal */
-
-.article-box {margin-top: 30px;}
-.article-box.last {margin-left: 0; margin-right: 0;}
-.article-box.style1 {border: 1px solid #e9e6df; padding: 20px;}
-.article-box.style2 {border-top: 1px solid #e9e6df; padding-top: 20px;}
-.article-box.style3 {border-top: 1px solid #e9e6df; border-bottom: 1px solid #e9e6df; padding: 20px 0;}
-
-.i-video {border: none; background: url(../images/icons-video.png) left center no-repeat; padding-left: 22px;}
-.i-image {border: none; background: url(../images/icons-image.png) left center no-repeat; padding-left: 22px;}
-.i-slide {border: none; background: url(../images/icons-slides.png) left center no-repeat; padding-left: 22px;}
-.i-audio {border: none; background: url(../images/icons-audio.png) left center no-repeat; padding-left: 22px;}
-.i-text {border: none; background: url(../images/icons-text.png) left center no-repeat; padding-left: 22px;}
