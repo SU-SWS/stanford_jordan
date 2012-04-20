@@ -168,8 +168,12 @@ h2 {margin: 0 0 1em 0; font-size: 1.2em; line-height: 1em; color: #820000; text-
 .i-audio {border: none; background: url(../images/icons-audio.png) left center no-repeat; padding-left: 22px;}
 .i-text {border: none; background: url(../images/icons-text.png) left center no-repeat; padding-left: 22px;}
 
+@media (max-width: 640px) {
+#navigation-primary {border-top: 1px solid transparent;}
+#navigation-primary ul li a {border-top: 1px solid transparent; padding-top: 0px;}
+}
+
 @media (max-width: 480px) {
-#navigation-primary {border-top: none;}
 #sidebar-first .block-book, #sidebar-first .block-menu {font-size: 1em; border: none;}
 #sidebar-first .block-book h2, #sidebar-first .block-menu h2 {padding: 0.5em 0px;}
 #sidebar-second .block-book, #sidebar-second .block-menu {font-size: 1em;}
