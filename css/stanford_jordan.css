@@ -95,7 +95,7 @@ form#system-themes-form {overflow: auto;}
 #navigation-secondary ul li ul li.leaf {padding-top: 0;}
 #navigation-secondary ul li ul li a {color: #827252; font-size: 1em; font-weight: normal; line-height: 1em; text-transform: none;}
 
-#main-content img {padding: 0; border: 5px solid #e3dfd5;}
+#main-content img {padding: 0; border: none;}
 
 #page-content .block-user {font-weight: bold; text-transform: uppercase; border-top: 1px solid #e9e6df; border-bottom: 1px solid #e9e6df; padding-bottom: 15px;}
 #page-content .block-user h2 {border: none; font-size: 1em; font-weight: bold; margin: 0; padding: 15px 0 15px 10px;}
