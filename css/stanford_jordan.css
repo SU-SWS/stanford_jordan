@@ -144,6 +144,7 @@ form#system-themes-form {overflow: auto;}
 body {background-color: #f9f9f6;}
 h2 {margin: 0 0 1em 0; font-size: 1.2em; line-height: 1em; color: #820000; text-transform: uppercase; font-weight: normal;}
 .well {border: none; box-shadow:none; border-radius: 0px; border-top: 5px solid #e3dfd5; border-bottom: 1px solid #d5d2c5; background: #f2f1eb; padding: 20px;}
+.well h2 {border: none;}
 #sidebar-first .well {border: none; box-shadow:none; border-radius: 0px; border-bottom: 0px solid #c9c9c7; background: none; padding: 0px;}
 
 /* HELPER CLASSES ------------------------------------------------------------*/
