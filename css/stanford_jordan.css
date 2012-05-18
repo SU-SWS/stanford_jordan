@@ -68,10 +68,10 @@ ul.tabs.secondary li.active a {color: #8c1515; border-bottom: 3px solid #8c1515;
 form#system-themes-form {overflow: auto;}
 
 /* GENERAL LAYOUT ------------------------------------------------------------*/
-#header #site {position: relative;}
-#header #site #name {clear: both; margin: 25px 0 0 0; font-family: Georgia, "Times New Roman", Times, serif; color: #820000; padding: 0; font-size: 3em; line-height: 1em; font-weight: normal; text-transform: uppercase;}
+#header #site {position: relative; padding: 5px 0 0 0;}
+#header #site #name {clear: both; margin: 0; padding: 0; font-family: Georgia, "Times New Roman", Times, serif; color: #820000; font-size: 3em; line-height: 1em; font-weight: normal; text-transform: uppercase;}
 #header #site #name a {color: #820000;}
-#header #site #slogan {position: absolute; top: 0; margin: 0px; padding: 0px; font-family: Georgia, "Times New Roman", Times, serif; color: #820000; text-transform: uppercase; letter-spacing: 1px; white-space: nowrap;}
+#header #site #slogan {margin: 2px 0 2px 2px; padding: 0; font-family: Georgia, "Times New Roman", Times, serif; color: #820000; text-transform: uppercase; letter-spacing: 1px;}
 
 #header #search {height: 26px; overflow: hidden; line-height: 0; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; -moz-box-shadow: -1px -1px 1px 1px #bbb; -webkit-box-shadow: -1px -1px 1px 1px #bbb; box-shadow: -1px -1px 1px 1px #bbb;}
 #header #search .search-item {float: left;}
@@ -155,6 +155,9 @@ h2 {margin: 0 0 1em 0; font-size: 1.2em; line-height: 1em; color: #820000; text-
 .lined {border-bottom: 4px solid #d2d2cf; padding: 0 0 1px 0;}
 .img-description {font-size: 0.833em;}
 .spacer {margin-top: 30px;}
+.clear-right {clear: right;}
+.clear-left {clear: left;}
+.clear-both {clear: both;}
 .clear-block {} /* Already defined by drupal */
 
 .article-box {margin-top: 30px;}
