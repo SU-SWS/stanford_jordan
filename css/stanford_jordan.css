@@ -81,7 +81,7 @@ form#system-themes-form {overflow: auto;}
 
 #navigation-primary {font-family: Georgia, "Times New Roman", Times, serif; border-top: 1px solid #dad5cb;}
 #navigation-primary ul li {margin: 0px; padding: 0px;}
-#navigation-primary ul li a {color: #827252; text-transform: uppercase; border-radius: 0px; margin: -1px 20px 0 0; padding: 0.5em 0px; border-top: 1px solid #dad5cb;}
+#navigation-primary ul li a {color: #827252; text-transform: uppercase; border-radius: 0px; margin: -1px 25px 0 0; padding: 0.5em 0px; border-top: 1px solid #dad5cb;}
 #navigation-primary ul li a:hover {background: transparent; border-top: 1px solid #827252;}
 #navigation-primary ul li a.active {background: transparent; border-top: 1px solid #827252;}
 #navigation-primary ul li ul li a {text-transform: none;}
