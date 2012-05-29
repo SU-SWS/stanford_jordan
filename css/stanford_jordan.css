@@ -150,8 +150,8 @@ h2 {margin: 0 0 1em 0; font-size: 1.2em; line-height: 1em; color: #820000; text-
 /* HELPER CLASSES ------------------------------------------------------------*/
 .red {color: #8c1515;}
 .sand {color: #827252;}
-.left {float: left; margin-right: 20px;}
-.right {float: right; margin-left: 20px;}
+.left {float: left; margin-bottom: 20px; margin-right: 20px;}
+.right {float: right; margin-bottom: 20px; margin-left: 20px;}
 .lined {border-bottom: 4px solid #d2d2cf; padding: 0 0 1px 0;}
 .img-description {font-size: 0.833em;}
 .spacer {margin-top: 30px;}
