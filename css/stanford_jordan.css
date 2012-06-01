@@ -78,6 +78,7 @@ form#system-themes-form {overflow: auto;}
 #header #search .form-text {border: none; color: #827252; height: 26px; margin: 0; padding: 0 0 0 5px; -moz-border-radius: 15px 0 0 15px; -webkit-border-radius: 15px 0 0 15px; border-radius: 15px 0 0 15px;}
 #header #search .form-submit {margin: 0 0 0 -20px; padding: 0px; text-indent: -9999px; border: none; box-shadow: none; text-shadow: none; height: 25px; width: 25px; background: url(../images/searchbutton.png) center center no-repeat; cursor: pointer; -moz-border-radius: 0 15px 15px 0; -webkit-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0;}
 #header #search label {position: absolute; left: -1000em; width: 20em; text-align: left;}
+#footer {background: #f2f1eb; width: 100%; margin: 0px auto; padding: 30px 0px 60px 0px;}
 
 #navigation-primary {font-family: Georgia, "Times New Roman", Times, serif; border-top: 1px solid #dad5cb;}
 #navigation-primary ul li {margin: 0px; padding: 0px;}
