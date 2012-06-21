@@ -1,11 +1,3 @@
-Version 6.x-1.2 2012-01-18
-------------------------------
-by hyperboy: Convert to sub-theme
-
-Version 6.x-1.1 2012-01-05
-------------------------------
-by hyperboy: Standardize file names
-
-Version 6.x-1.0
+Version 7.x-1.0
 ------------------------------
 by hyperboy: Initial Release
