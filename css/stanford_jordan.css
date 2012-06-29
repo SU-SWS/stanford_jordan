@@ -155,7 +155,7 @@ form#system-themes-form {overflow: auto;}
 #content-top .block-menu ul.menu li, #content-upper .block-menu ul.menu li {display: inline-block; border: 0px; margin: 0 0 -1px 0; padding: 0px;}
 #content-top .block-menu ul.menu li a, #content-upper .block-menu ul.menu li a {display: block; background: #eae9e3; padding: 5px 10px; border: 1px solid #bab19e; border-top-left-radius:5px; border-top-right-radius: 5px; margin: 0.75em 0 0 0.75em;}
 #content-top .block-menu ul.menu li a:hover, #content-upper .block-menu ul.menu li a:hover {border: 1px solid #bab19e; text-decoration: none;}
-#content-top .block-menu ul.menu li.active a, #content-upper .block-menu ul.menu li.active a {background: #fbfbf9; border-bottom: 1px solid #fbfbf9;}
+#content-top .block-menu ul.menu li a.active, #content-upper .block-menu ul.menu li a.active {background: #fbfbf9; border-bottom: 1px solid #fbfbf9;}
 
 /* CONTENT -------------------------------------------------------------------*/
 body {background-color: #f9f9f6;}
