@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal; color: #820000;}
 h1, h2, h3 {font-family: Georgia, "Times New Roman", Times, serif;}
 h4, h5, h6 {font-family: Arial, Helvetica, sans-serif;}
 h1 {font-size: 36px; margin: 0; line-height:1em; padding:0;}
-h2 {font-size: 18px; margin: 0 0 12px 0; padding: 0 0 6px 0; text-transform: uppercase; border-bottom: 4px solid #8c1515; line-height: 1em; font-weight:normal;}
+h2 {font-size: 18px; margin: 0 0 12px 0; padding: 0 0 6px 0; text-transform: uppercase; border-bottom: 4px solid #8c1515; line-height: 1em; font-weight:normal; letter-spacing:0.03em;}
 h3 {font-size: 16px; margin: 0 0 12px 0; text-transform: uppercase; font-weight: bold;}
 h4 {font-size: 14px; margin: 0 0 0.5em 0; text-transform: uppercase;}
 h5 {font-size: 12px; font-weight: bold; margin: 0 0 0.5em 0;}
@@ -90,7 +90,7 @@ form#system-themes-form {overflow: auto;}
 #footer {background: #f2f1eb; width: 100%; margin: 0px auto; padding: 30px 0px 60px 0px;}
 #footer .container {padding: 0px 2% 0px 2%;}
 
-#nav {font-family: Georgia, "Times New Roman", Times, serif; border-top: 1px solid #dad5cb;}
+#nav {font-family: Georgia, "Times New Roman", Times, serif; border-top: 1px solid #dad5cb; font-size: 16px; letter-spacing: 0.03em;}
 #nav ul li { float: left; display: block; margin: 0px; padding: 0px; list-style-image: none; list-style-type: none;}
 #nav ul li a {color: #827252; text-transform: uppercase; border-radius: 0px; margin: -1px 25px 0 0; padding: 0.5em 0px; border-top: 1px solid #dad5cb;}
 #nav ul li a:hover {background: transparent; border-top: 1px solid #827252;}
