@@ -149,7 +149,7 @@ form#system-themes-form {overflow: auto;}
 #sidebar-second .block-book a.active {color: #000000;}
 
 #sidebar-second .block-menu {font-size: 0.833em; font-weight: bold; text-transform: uppercase;}
-#sidebar-second .block-menu h2 {background: #bab19e; border: none; color: #ffffff; font-size: 1em; line-height: 3em; font-weight: bold; margin: 0; padding: 0 0 0 15px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -webkit-border-radius: 5px 5px 0px 0px; border-radius: 5px 5px 0px 0px;}
+#sidebar-second .block-menu h2 {/*background: #bab19e; border: none; color: #ffffff; font-size: 1em; line-height: 3em; font-weight: bold; margin: 0; padding: 0 0 0 15px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -webkit-border-radius: 5px 5px 0px 0px; border-radius: 5px 5px 0px 0px;*/}
 #sidebar-second .block-menu ul.menu {margin: 0; padding: 0; list-style: none;}
 #sidebar-second .block-menu ul.menu li {background: #f2f1eb; border-top: 1px solid #fbfbf9; margin: 0; padding: 12px 5px 12px 15px; list-style: none;}
 #sidebar-second .block-menu ul.menu li ul {margin: 15px 0 0 0;}
