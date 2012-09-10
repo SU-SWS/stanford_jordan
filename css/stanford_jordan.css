@@ -87,8 +87,7 @@ form#system-themes-form {overflow: auto;}
 
 #page-content .container {padding: 0px 2% 0px 2%;}
 
-#footer {background: #f2f1eb; width: 100%; margin: 0px auto; padding: 30px 0px 60px 0px;}
-#footer .container {padding: 0px 2% 0px 2%;}
+#footer {background: #f2f1eb; padding: 30px 0 30px 0;}
 
 #nav {font-family: Georgia, "Times New Roman", Times, serif; border-top: 1px solid #dad5cb; font-size: 16px; letter-spacing: 0.03em;}
 #nav ul li { float: left; display: block; margin: 0px; padding: 0px; list-style-image: none; list-style-type: none;}
