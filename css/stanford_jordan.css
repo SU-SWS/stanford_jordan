@@ -78,8 +78,6 @@ form#system-themes-form {overflow: auto;}
 
 #page-content .container {padding: 0px 2% 0px 2%;}
 
-#footer {background: #f2f1eb; padding: 30px 0 30px 0;}
-
 #nav {border-top: 1px solid #dad5cb;}
 #nav ul li { float: left; display: block; margin: 0px; padding: 0px; list-style-image: none; list-style-type: none;}
 #nav ul li a {color: #827252; text-transform: uppercase; border-radius: 0px; margin: 0px 25px 0 0; padding: 6px 0px;}
