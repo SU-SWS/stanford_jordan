@@ -1,5 +1,5 @@
 /* TYPOGRAPHY ------------------------------------------------------------*/
-h1, h2, h3 {font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;}
+h1, h2, h3, #nav {font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;}
 h2 {border-bottom: 4px solid #8c1515;}
 
 p {font-size: 1em; margin: 0 0 1em 0;}
@@ -8,6 +8,12 @@ em {padding: 0 3px 0 0;}
 hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; padding: 0;}
 quote, code {margin: .5em 0;}
 img, a img {border: none; outline: none;}
+
+/* Site Title and Slogan */
+#site-name {font-family: "Crimson Text", "Times New Roman", Times, serif; text-transform:uppercase; color: #8c1515;}
+#site-name a {color: #8c1515;}
+#site-name a:hover {color: #820000;}
+#site-slogan {font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif; color: #8c1515; line-height: 1em;}
 
 /* TABLES ------------------------------------------------------------*/
 
@@ -74,9 +80,9 @@ form#system-themes-form {overflow: auto;}
 
 #footer {background: #f2f1eb; padding: 30px 0 30px 0;}
 
-#nav {font-family: Georgia, "Times New Roman", Times, serif; border-top: 1px solid #dad5cb; font-size: 16px; letter-spacing: 0.03em;}
+#nav {border-top: 1px solid #dad5cb;}
 #nav ul li { float: left; display: block; margin: 0px; padding: 0px; list-style-image: none; list-style-type: none;}
-#nav ul li a {color: #827252; text-transform: uppercase; border-radius: 0px; margin: -1px 25px 0 0; padding: 0.5em 0px;}
+#nav ul li a {color: #827252; text-transform: uppercase; border-radius: 0px; margin: -1px 25px 0 0; padding: 6px 0px;}
 #nav ul li a:hover {background: transparent; border-top: 1px solid #827252; text-decoration:none;}
 #nav ul li a.active {background: transparent; border-top: 1px solid #827252;}
 #nav ul li ul li {display: block;}
