@@ -82,7 +82,7 @@ form#system-themes-form {overflow: auto;}
 
 #nav {border-top: 1px solid #dad5cb;}
 #nav ul li { float: left; display: block; margin: 0px; padding: 0px; list-style-image: none; list-style-type: none;}
-#nav ul li a {color: #827252; text-transform: uppercase; border-radius: 0px; margin: -1px 25px 0 0; padding: 6px 0px;}
+#nav ul li a {color: #827252; text-transform: uppercase; border-radius: 0px; margin: 0px 25px 0 0; padding: 4px 0px;}
 #nav ul li a:hover {background: transparent; border-top: 1px solid #827252; text-decoration:none;}
 #nav ul li a.active {background: transparent; border-top: 1px solid #827252;}
 #nav ul li ul li {display: block;}
