@@ -10,7 +10,7 @@ quote, code {margin: .5em 0;}
 img, a img {border: none; outline: none;}
 
 /* Site Title and Slogan */
-#site-name {font-family: "Crimson Text", "Times New Roman", Times, serif; text-transform:uppercase; color: #8c1515;}
+#site-name {font-family: "Crimson Text", "Times New Roman", Times, serif; text-transform:uppercase; color: #8c1515; font-weight:normal;}
 #site-name a {color: #8c1515;}
 #site-name a:hover {color: #820000;}
 #site-slogan {font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif; color: #8c1515; line-height: 1em;}
