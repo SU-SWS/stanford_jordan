@@ -69,11 +69,10 @@ form#system-themes-form {overflow: auto;}
 #header #site #name a {color: #820000;}
 #header #site #slogan {margin: 2px 0 2px 2px; padding: 0; font-family: Georgia, "Times New Roman", Times, serif; color: #820000; text-transform: uppercase; letter-spacing: 1px;}
 
-#header #search {height: 26px; overflow: hidden; line-height: 0; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; -moz-box-shadow: -1px -1px 1px 1px #bbb; -webkit-box-shadow: -1px -1px 1px 1px #bbb; box-shadow: -1px -1px 1px 1px #bbb;}
-#header #search .search-item {float: left;}
-#header #search .form-text {border: none; color: #827252; height: 26px; margin: 0; padding: 0 0 0 5px; -moz-border-radius: 15px 0 0 15px; -webkit-border-radius: 15px 0 0 15px; border-radius: 15px 0 0 15px;}
-#header #search .form-submit {margin: 0 0 0 -20px; padding: 0px; text-indent: -9999px; border: none; box-shadow: none; text-shadow: none; height: 25px; width: 25px; background: url(../images/searchbutton.png) center center no-repeat; cursor: pointer; -moz-border-radius: 0 15px 15px 0; -webkit-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0;}
-#header #search label {position: absolute; left: -1000em; width: 20em; text-align: left;}
+#header #search-block-form {height: 26px; overflow: hidden; line-height: 0; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; -moz-box-shadow: -1px -1px 1px 1px #bbb; -webkit-box-shadow: -1px -1px 1px 1px #bbb; box-shadow: -1px -1px 1px 1px #bbb;}
+#header #search-block-form .form-text {border: none; color: #827252; height: 26px; margin: 0; padding: 0 0 0 5px; -moz-border-radius: 15px 0 0 15px; -webkit-border-radius: 15px 0 0 15px; border-radius: 15px 0 0 15px;}
+#header #search-block-form .form-submit {margin: 0 0 0 -20px; padding: 0px; text-indent: -9999px; border: none; box-shadow: none; text-shadow: none; height: 25px; width: 25px; background: url(../images/searchbutton.png) center center no-repeat; cursor: pointer; -moz-border-radius: 0 15px 15px 0; -webkit-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0;}
+#header #search-block-form label {position: absolute; left: -1000em; width: 20em; text-align: left;}
 #header .container {padding: 0px 2% 0px 2%;}
 
 #page-content .container {padding: 0px 2% 0px 2%;}

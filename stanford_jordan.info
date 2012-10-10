@@ -6,6 +6,7 @@ version = 2.0
 
 stylesheets[all][] = css/stanford_jordan.css
 scripts[] = js/stanford_jordan.js
+scripts[] = js/script.js
 regions[global_header] = Site: Global Header
 regions[page_top] = Page: Top
 regions[header] = Header
