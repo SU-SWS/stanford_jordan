@@ -1,13 +1,8 @@
-/* TYPOGRAPHY ------------------------------------------------------------*/
+/* Header Styles */
 h1, h2, h3, #nav {font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;}
 h2 {border-bottom: 4px solid #8c1515;}
 
-p {font-size: 1em; margin: 0 0 1em 0;}
-blockquote {margin: 1.25em; padding: 1.25em 1.25em 0 1.25em;}
-em {padding: 0 3px 0 0;}
 hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; padding: 0;}
-quote, code {margin: .5em 0;}
-img, a img {border: none; outline: none;}
 
 /* Site Title and Slogan */
 #site-name {font-family: "Crimson Text", "Times New Roman", Times, serif; text-transform:uppercase; color: #8c1515; font-weight:normal;}
