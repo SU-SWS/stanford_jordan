@@ -4,12 +4,6 @@ h2 {border-bottom: 4px solid #8c1515;}
 
 hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; padding: 0;}
 
-/* Site Title and Slogan */
-#site-name {font-family: "Crimson Text", "Times New Roman", Times, serif; text-transform:uppercase; color: #8c1515; font-weight:normal;}
-#site-name a {color: #8c1515;}
-#site-name a:hover {color: #820000;}
-#site-slogan {font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif; color: #8c1515; line-height: 1em;}
-
 /* Text Styles */
 .summary {line-height:1.2em; color:#565347;}
 
