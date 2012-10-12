@@ -13,6 +13,10 @@ hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; p
 /* Text Styles */
 .summary {line-height:1.2em; color:#565347;}
 
+/* Callout and Blockquote Styles */
+.topline {border-top: 4px solid #8C1515;}
+.bracket {border-top: 4px solid #E3DFD5; border-bottom: 1px solid #E3DFD5;}
+
 /* TABLES ------------------------------------------------------------*/
 
 table {margin: 0; width: 100%; border: 0px;}
