@@ -122,11 +122,11 @@ form#system-themes-form {overflow: auto;}
 #sidebar-first .block-menu ul.menu li a {display: block; border-top: 1px solid #e9e6df; padding: 12px 0 12px 15px; color:#827252;}
 #sidebar-first .block-menu ul.menu li a:hover, #sidebar-first .block-menu ul.menu a.active {background-color:#ffffff; color:#827252;}
 #sidebar-first .block-menu ul.menu li.active-trail ul {background-color:#ffffff;}
-#sidebar-first .block-menu ul.menu li ul {padding-bottom:12px;}
-#sidebar-first .block-menu ul.menu li ul li {padding-left:15px;}
-#sidebar-first .block-menu ul.menu li ul li a {border: medium none; font-weight: normal; padding: 3px 0; text-transform: none;}
-#sidebar-first .block-menu ul.menu li ul li a:hover, #sidebar-first .block-menu ul.menu li ul li a.active {font-weight:bold;}
-#sidebar-first .block-menu ul.menu li ul li.last {margin: 0; padding: 0;}
+#sidebar-first .block-menu ul.menu li ul {padding:15px 0;}
+#sidebar-first .block-menu ul.menu li ul li {}
+#sidebar-first .block-menu ul.menu li ul li a {border: medium none; font-weight: normal; padding: 3px 0 3px 15px; text-transform: none;}
+#sidebar-first .block-menu ul.menu li ul li a:hover, #sidebar-first .block-menu ul.menu li ul li a.active {text-decoration:underline;}
+#sidebar-first .block-menu ul.menu li ul li.last {}
 
 /* Second sidebar Menu Blocks */
 #sidebar-second .block-book {font-size: 0.833em; font-weight: bold; text-transform: uppercase;}
