@@ -115,17 +115,6 @@ form#system-themes-form {overflow: auto;}
 #sidebar-first .block-book ul.menu ul li {padding: 6px 0 6px 10px; border: none;}
 #sidebar-first .block-book ul.menu a.active {color: #000000;}
 
-#sidebar-first .block-menu {text-transform: uppercase; border-bottom: 1px solid #e9e6df;}
-#sidebar-first .block-menu h2 {border: none; font-size: 15px; font-weight: bold; margin: 0; padding: 5px 0 15px;}
-#sidebar-first .block-menu ul.menu {margin: 0; padding: 0; list-style: none;}
-#sidebar-first .block-menu ul.menu li {margin: 0; list-style: none; font-size: 13px; font-weight: 600; letter-spacing: 0.03em; padding:0;}
-#sidebar-first .block-menu ul.menu li a {display: block; border-top: 1px solid #e9e6df; padding: 12px 0 12px 15px; color:#827252;}
-#sidebar-first .block-menu ul.menu li a:hover, #sidebar-first .block-menu ul.menu a.active-trail {background-color:#ffffff; color:#827252;}
-#sidebar-first .block-menu ul.menu li.active-trail ul {background-color:#ffffff;}
-#sidebar-first .block-menu ul.menu li ul {padding:0 0 15px 15px;}
-#sidebar-first .block-menu ul.menu li ul li a {border: medium none; font-weight: normal; padding: 3px 0 3px 15px; text-transform: none;}
-#sidebar-first .block-menu ul.menu li ul li a:hover, #sidebar-first .block-menu ul.menu li ul li a.active-trail {text-decoration:underline;}
-
 /* Second sidebar Menu Blocks */
 #sidebar-second .block-book {font-size: 0.833em; font-weight: bold; text-transform: uppercase;}
 #sidebar-second .block-book h2 {background: #bab19e; border: none; color: #ffffff; font-size: 1em; line-height: 3em; font-weight: bold; margin: 0; padding: 0 0 0 15px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -webkit-border-radius: 5px 5px 0px 0px; border-radius: 5px 5px 0px 0px;}
