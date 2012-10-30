@@ -9,6 +9,7 @@ body {background-color: #fbfbf9; background-image: url("../images/jordan_gradien
 h1, h2, h3, #nav, .summary {font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;}
 h2 {border-bottom: 4px solid #8c1515;}
 .summary {line-height:1.2em; color:#565347;}
+.img-description {font-size: 0.833em;} /* would like to phase this out as it's replaced by .caption */
 
 /* ----- Links ----------------------- */
 /* ----- Lists ----------------------- */
@@ -149,19 +150,16 @@ hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; p
 .i-text {border: none; background: url(../images/icons-text.png) left center no-repeat; padding-left: 22px;}
 
 /* HELPER CLASSES ************************ */
+
+/* ----- Style ----------------------- */
 .red {color: #8c1515;}
 .sand {color: #827252;}
-.left {float: left; margin-bottom: 20px; margin-right: 20px;}
-.right {float: right; margin-bottom: 20px; margin-left: 20px;}
 .lined {border-bottom: 4px solid #d2d2cf; padding: 0 0 1px 0;}
-.img-description {font-size: 0.833em;}
-.spacer {margin-top: 30px;}
-.clear-right {clear: right;}
-.clear-left {clear: left;}
-.clear-both {clear: both;}
-.clear-block {} /* Already defined by drupal */
 
 /* ----- Positioning ----------------- */
+.left {float: left; margin-bottom: 20px; margin-right: 20px;}
+.right {float: right; margin-bottom: 20px; margin-left: 20px;}
+
 /* ----- Sizing ---------------------- */
 
 /* GENERAL OVERRIDES ********************* */
