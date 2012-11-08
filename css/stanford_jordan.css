@@ -128,7 +128,7 @@ hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; p
 /* CONTAINERS ***************************** */
 /* ----- Blocks ---------------------- */
 /* ----- Wells ----------------------- */
-.well {border-top: 5px solid #e3dfd5;}
+.well, #sidebar-second .well-sidebar-only, #sidebar-first .well-sidebar-only {border-top: 5px solid #e3dfd5;}
 .well h2 {border: none;}
 
 /* ----- Callouts and Blockquotes ---- */
