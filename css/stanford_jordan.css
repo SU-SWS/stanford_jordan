@@ -65,8 +65,8 @@ hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; p
 
 /* NAVIGATION ***************************** */
 #nav {border-top: 1px solid #dad5cb;}
-#nav ul li { display: inline-block; margin: 0px; padding: 9px 0 0; list-style-image: none; list-style-type: none;}
-#nav ul li a {color: #827252; text-transform: uppercase; border-radius: 0px; margin: 0px 25px 0 0; padding: 6px 0px; border-top: 1px solid transparent;}
+#nav ul li { display: inline-block; margin: 0px; padding: 4px 0 0; list-style-image: none; list-style-type: none;}
+#nav ul li a {color: #827252; text-transform: uppercase; border-radius: 0px; margin: 0px 25px 0 0; padding: 2px 0px 0px 0px; border-top: 1px solid transparent;}
 #nav ul li a:hover {background: transparent; border-top: 1px solid #827252; text-decoration:none;}
 #nav ul li a.active {background: transparent; border-top: 1px solid #827252;}
 #nav ul li ul li {display: block;}
