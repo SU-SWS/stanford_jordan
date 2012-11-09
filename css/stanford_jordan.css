@@ -16,7 +16,7 @@ h2 {border-bottom: 4px solid #8c1515; padding: 0 0 6px;}
 /* ----- Tables ---------------------- */
 table {margin: 0; width: 100%; border: 0px;}
 thead, thead th {background: #8c1515;}
-thead th {color: #ffffff; border: 0px; font-size: 0.833em; font-weight: bold; text-transform: uppercase; padding: 1em 2em 1em 1em;}
+thead th {color: #ffffff; border: 0px; font-weight: bold; text-transform: uppercase; padding: 1em 2em 1em 1em;}
 thead th a:link, thead th a:visited {color: #f9d37c;}
 thead th.active a img {padding-left: 5px;}
 tbody {border: 0px;}
