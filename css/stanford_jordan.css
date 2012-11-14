@@ -172,6 +172,12 @@ hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; p
 /* STANFORD FEATURES OVERRIDES *********** */
 /* ----- Views Slideshow ------------- */
 /* ----- Banner Image Slideshow ------ */
+.banner-overlay {background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75); color: #F2F1EB; display: inline-block; margin-left: 6px; max-width: 70%; padding: 25px; position: relative; top: -140px;}
+.banner-overlay p {display: inline; margin-right: 15px; font-size:15px;}
+.banner-overlay-caption {font-family: Georgia, "Times New Roman", Times, serif; font-size: 22px; line-height: 1em; margin-bottom: 8px;}
+.banner-overlay .more-link a {color: #BBAA7B;}
+.banner-overlay .more-link a:hover {color:#ddcf99;}
+
 /* ----- Stanford Events Importer ---- */
 /* ----- Stanford Events Views ------- */
 .date-stacked {border-right: 1px solid #DAD5CB;}
