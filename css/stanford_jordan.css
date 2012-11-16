@@ -107,6 +107,7 @@ hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; p
 
 /* FOOTER ********************************* */
 /* ----- Fat Footer ------------------ */
+#footer h2 {border-bottom:none; margin:0 0 0.4em 2px;}
 
 /* CONTENT ******************************** */
 #page-content .container {padding: 0px 2% 0px 2%;}
