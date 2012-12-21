@@ -12,6 +12,9 @@ h2 {border-bottom: 4px solid #8c1515; padding: 0 0 6px;}
 .img-description {font-size: 0.833em;} /* would like to phase this out as it's replaced by .caption */
 
 /* ----- Links ----------------------- */
+p a {border-bottom:dotted 1px #827252;}
+p a:hover {border-bottom:dotted 1px #2e2d29;}
+
 /* ----- Lists ----------------------- */
 /* ----- Tables ---------------------- */
 
@@ -85,6 +88,8 @@ hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; p
 #sidebar-first .block-book ul.menu li {border-top: 1px solid #e9e6df; margin: 0; padding: 15px 0 15px 10px;}
 #sidebar-first .block-book ul.menu ul li {padding: 6px 0 6px 10px; border: none;}
 #sidebar-first .block-book ul.menu a.active {color: #000000;}
+#sidebar-first .block-menu ul.menu li a:hover, #sidebar-first .block-menu ul.menu a.active-trail {background-color:#ffffff;}
+#sidebar-first .block-menu ul.menu li.active-trail ul {background-color:#ffffff;}
 
 /* ----- Second Sidebar Menu Blocks -- */
 #sidebar-second .block-book {font-size: 0.833em; font-weight: bold; text-transform: uppercase;}
