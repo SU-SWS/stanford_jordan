@@ -210,6 +210,9 @@ form#system-themes-form {overflow: auto;}
 
 /* MEDIA QUERIES ************************* */
 /* ----- Responsive ------------------ */
+@media (max-width: 767px) {
+.navbar-inner {background: transparent;}	
+}
 @media (max-width: 640px) {
 #navigation-primary {border-top: 1px solid transparent;}
 #navigation-primary ul li a {border-top: 1px solid transparent; padding-top: 0px;}
