@@ -8,12 +8,16 @@ body {background-color: #fbfbf9; background-image: url("../images/jordan_gradien
 /* ----- Text ------------------------ */
 h1, h2, h3, #nav, nav, .summary {font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;}
 h2 {border-bottom: 4px solid #8c1515; padding: 0 0 6px;}
+h3 {margin: 1.2em 0 0.7em;}
 .summary {line-height:1.2em; color:#565347;}
+strong {letter-spacing: 0.02em;}
 .img-description {font-size: 0.833em;} /* would like to phase this out as it's replaced by .caption */
 
 /* ----- Links ----------------------- */
 p a {border-bottom:dotted 1px #827252;}
 p a:hover {border-bottom:dotted 1px #2e2d29;}
+.btn-red a, a.btn-red {background-color: #8C1515; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.5); -moz-box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.5); box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.5); color: white; padding: 7px 15px; }
+.btn-red a:hover, a.btn-red:hover {background-color: #660E0E;}
 
 /* ----- Lists ----------------------- */
 /* ----- Tables ---------------------- */
@@ -122,6 +126,7 @@ nav {border-top: 1px solid #dad5cb;}
 
 /* CONTAINERS ***************************** */
 /* ----- Blocks ---------------------- */
+#main .block {margin-bottom: 40px;}
 .sub-block h2 {border-bottom:none; border-top:4px solid #8c1515; padding-top: 6px; margin-bottom:1em;}
 
 /* ----- Wells ----------------------- */
