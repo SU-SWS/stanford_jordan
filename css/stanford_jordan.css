@@ -102,10 +102,11 @@ nav {border-top: 1px solid #dad5cb;}
 #sidebar-second .block-book ul.menu ul li {padding: 6px 5px 6px 10px; border: none;}
 #sidebar-second .block-book a.active {color: #000000;}
 #sidebar-second .block-menu ul.menu {margin: 0; padding: 0; list-style: none;}
-#sidebar-second .block-menu ul.menu li {margin: 0 0 0 25px;}
-#sidebar-second .block-menu ul.menu li ul {margin: 15px 0 0 0;}
-#sidebar-second .block-menu ul.menu li ul li.last {margin: 0; padding: 15px 0 0px 10px;}
+#sidebar-second .block-menu ul.menu li {}
+#sidebar-second .block-menu ul.menu li ul {}
+#sidebar-second .block-menu ul.menu li ul li.last {margin: 0;}
 #sidebar-second .block-menu a.active {color: #000000;}
+#sidebar-second .dropdown-menu {background-color:transparent;}
 
 /* ----- Admin Menu ------------------ */
 /* ----- Pager Nav ------------------- */
