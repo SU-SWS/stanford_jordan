@@ -12,6 +12,7 @@ h3 {margin: 1.2em 0 0.7em;}
 .summary {line-height:1.2em; color:#565347;}
 strong {letter-spacing: 0.02em;}
 .img-description {font-size: 0.833em;} /* would like to phase this out as it's replaced by .caption */
+.content h3:first-child {margin-top: 0;}
 
 /* ----- Links ----------------------- */
 p a {border-bottom:dotted 1px #827252;}
