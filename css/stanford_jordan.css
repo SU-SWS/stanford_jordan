@@ -47,8 +47,6 @@ hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; p
 
 /* ----- Search Box ------------------ */
 #nav-search {margin-right: 0;}
-#block-search-form input.btn-search {background-image: url("../images/searchbutton.png");}
-#block-search-form input.btn-search:hover {background-image: url("../images/searchbutton2.png");}
 
 /* ----- Logo ------------------------ */
 /* ----- Site Title and Slogan ------- */
