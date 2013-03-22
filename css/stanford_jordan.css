@@ -167,6 +167,7 @@ nav {border-top: 1px solid #dad5cb;}
 /* GENERAL OVERRIDES ********************* */
 /* ----- Bootstrap Overrides --------- */
 /* ----- Field Collection Overrides -- */
+.page-node .content-body .field.field-name-field-s-image-image {margin-bottom:0px;}
 /* ----- Field Label Overrides ------- */
 
 /* STANFORD FEATURES OVERRIDES *********** */
