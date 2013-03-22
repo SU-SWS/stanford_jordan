@@ -173,7 +173,7 @@ nav {border-top: 1px solid #dad5cb;}
 /* ----- Views Slideshow ------------- */
 /* ----- Banner Image Slideshow ------ */
 .banner-overlay {}
-.banner-overlay p {font-family: Georgia, "Times New Roman", Times, serif; font-size: 22px; line-height: 1em; margin-bottom: 8px;}
+.banner-overlay p {font-family: Georgia, "Times New Roman", Times, serif; font-size: 15px; line-height: 1.5em; margin-bottom: 8px;}
 .banner-overlay a {color: #BBAA7B;}
 .banner-overlay a:hover {color:#ddcf99;}
 
