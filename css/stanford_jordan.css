@@ -142,7 +142,7 @@ nav {border-top: 1px solid #dad5cb;}
 /* POSTCARD LAYOUTS ********************** */
 
 /* IMAGES ******************************** */
-#main-content img {padding: 0; border: none;}
+#main-content img {}
 
 /* ICONS ********************************* */
 .i-video {border: none; background: url(../images/icons-video.png) left center no-repeat; padding-left: 22px;}
