@@ -8,7 +8,7 @@ body {background-color: #fbfbf9; background-image: url("../images/jordan_gradien
 /* ----- Text ------------------------ */
 h1, h2, h3, #nav, nav, .summary {font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;}
 h2 {border-bottom: 4px solid #8c1515; padding: 0 0 6px;}
-h3 {margin: 1.2em 0 0.7em;}
+h3 {margin: 1.2em 0 0.2em;}
 .summary {line-height:1.2em; color:#565347;}
 strong {letter-spacing: 0.02em;}
 .img-description {font-size: 0.833em;} /* would like to phase this out as it's replaced by .caption */
