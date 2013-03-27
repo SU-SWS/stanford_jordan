@@ -117,6 +117,7 @@ nav {border-top: 1px solid #dad5cb;}
 /* FOOTER ********************************* */
 /* ----- Fat Footer ------------------ */
 #footer h2 {border-bottom:none; margin:0 0 0.4em 2px;}
+#footer .block {border-top:1px solid #DAD5CB;}
 
 /* CONTENT ******************************** */
 #page-content .container {padding: 0px 2% 0px 2%;}
