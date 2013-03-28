@@ -6,7 +6,7 @@
 # Uncomment this to turn on verbose mode
 #export DH_VERBOSE=1
 DESTDIR = $(CURDIR)/debian/drupal7-thm-stanfordjordan
-BUILDDIR = $(DESTDIR)//usr/share/drupal7/themes/stanfordjordan
+BUILDDIR = $(DESTDIR)//usr/share/drupal7/themes/stanford_jordan
 
 clean: 
 	dh_testdir
@@ -20,7 +20,7 @@ install:
 	dh_clean -k
 	dh_installdirs
 	dh_installdocs COPYRIGHT.txt README.txt
-	cp -r css images js favicon.ico logo.png screenshot.png stanfordjordan.info \
+	cp -r css images js favicon.ico logo.png screenshot.png stanford_jordan.info \
 		$(BUILDDIR)
 	find $(BUILDDIR) -type f |xargs chmod 0644
 
