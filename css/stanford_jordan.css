@@ -100,10 +100,11 @@ nav {border-top: 1px solid #dad5cb;}
 #sidebar-second .block-book h2 {background: #bab19e; border: none; color: #ffffff; font-size: 1em; line-height: 3em; font-weight: bold; margin: 0; padding: 0 0 0 15px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -webkit-border-radius: 5px 5px 0px 0px; border-radius: 5px 5px 0px 0px;}
 #sidebar-second .block-book ul.menu {margin: 0; padding: 0;}
 #sidebar-second .block-book ul.menu ul {padding-left: 7px; margin-top: 6px;}
-#sidebar-second .block-book ul.menu li {background: #f2f1eb; border-top: 1px solid #fbfbf9; margin: 0; padding: 12px 5px 12px 10px; list-style-type:square; list-style-image:url("../images/bullet.gif");}
+#sidebar-second .block-book ul.menu li {background: #f2f1eb; border-top: 1px solid #fbfbf9; margin: 0; padding: 12px 5px 12px 10px;}
 #sidebar-second .block-book ul.menu ul li {padding: 6px 5px 6px 10px; border: none;}
 #sidebar-second .block-book a.active {color: #000000;}
-#sidebar-second .block-menu ul.menu {margin: 0; padding: 0; list-style: none;}
+#sidebar-second .block-menu ul.menu {margin: 0; padding: 0;}
+#sidebar-second .block-menu ul.menu li {list-style-type:square; list-style-image:url("../images/bullet.gif");}
 #sidebar-second .block-menu ul.menu li ul {}
 #sidebar-second .block-menu ul.menu li ul li.last {margin: 0;}
 #sidebar-second .block-menu a.active {color: #000000;}
