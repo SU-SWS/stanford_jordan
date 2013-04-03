@@ -93,6 +93,7 @@ nav {border-top: 1px solid #dad5cb;}
 #sidebar-first .block-book ul.menu a.active {color: #000000;}
 #sidebar-first .block-menu ul.menu li a:hover, #sidebar-first .block-menu ul.menu a.active-trail {background-color:#ffffff;}
 #sidebar-first .block-menu ul.menu li.active-trail ul {background-color:#ffffff;}
+#sidebar-first .block-menu ul.menu li a:hover, #sidebar-first .block-menu ul.menu a.active-trail, #sidebar-first .block-menu-block ul.menu li a:hover, #sidebar-first .block-menu-block ul.menu a.active-trail {color: #827252;}
 
 /* ----- Second Sidebar Menu Blocks -- */
 #sidebar-second .block-book {font-size: 0.833em; font-weight: bold; text-transform: uppercase;}
