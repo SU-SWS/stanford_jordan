@@ -103,8 +103,9 @@ nav {border-top: 1px solid #dad5cb;}
 #sidebar-second .block-book ul.menu li {background: #f2f1eb; border-top: 1px solid #fbfbf9; margin: 0; padding: 12px 5px 12px 10px;}
 #sidebar-second .block-book ul.menu ul li {padding: 6px 5px 6px 10px; border: none;}
 #sidebar-second .block-book a.active {color: #000000;}
-#sidebar-second .block-menu ul.menu {margin: 0; padding: 0;}
+#sidebar-second .block-menu ul.menu {margin: 0 0 0 25px; padding: 0;}
 #sidebar-second .block-menu ul.menu li {list-style-type:square; list-style-image:url("../images/bullet.gif");}
+#sidebar-second .block-menu ul.menu li a {color:#827252;}
 #sidebar-second .block-menu ul.menu li ul {}
 #sidebar-second .block-menu ul.menu li ul li.last {margin: 0;}
 #sidebar-second .block-menu a.active {color: #000000;}
