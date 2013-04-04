@@ -66,7 +66,7 @@ nav {font-size: 18px; margin: 0 0 12px 0; padding: 0; text-transform: uppercase;
 @media (min-width: 768px) {
 nav {border-top: 1px solid #dad5cb;}
 .navbar-inner {background-color: transparent; background-image: none; background-repeat: no-repeat; border: none; border-radius: 0px; box-shadow: none; min-height: 0px; padding-left: 0px; padding-right: 0px; filter: none;}
-.navbar .nav > li > a {color: #827252; text-transform: uppercase; border-radius: 0px; margin: -1px 25px 0 0; padding: 5px 0px 10px 0px; border-top: 1px solid transparent; float: none; text-decoration: none; text-shadow: none;}
+.navbar .nav > li > a {color: #827252; text-transform: uppercase; border-radius: 0px; margin: -1px 25px 0 0; padding: 5px 0px 5px 0px; border-top: 1px solid transparent; float: none; text-decoration: none; text-shadow: none;}
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {background-color: transparent; box-shadow: none; color: #827252; text-decoration: none; border-top: 1px solid #827252;}
 .navbar .nav > li > a:hover, .navbar .nav > li > a:active {color: #827252; background: transparent; border-top: 1px solid #827252; text-decoration:none;}
 .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {background-color: transparent; color: #827252;}
@@ -93,6 +93,7 @@ nav {border-top: 1px solid #dad5cb;}
 #sidebar-first .block-book ul.menu a.active {color: #000000;}
 #sidebar-first .block-menu ul.menu li a:hover, #sidebar-first .block-menu ul.menu a.active-trail {background-color:#ffffff;}
 #sidebar-first .block-menu ul.menu li.active-trail ul {background-color:#ffffff;}
+#sidebar-first .block-menu ul.menu li a:hover, #sidebar-first .block-menu ul.menu a.active-trail, #sidebar-first .block-menu-block ul.menu li a:hover, #sidebar-first .block-menu-block ul.menu a.active-trail {color: #827252;}
 
 /* ----- Second Sidebar Menu Blocks -- */
 #sidebar-second .block-book {font-size: 0.833em; font-weight: bold; text-transform: uppercase;}
@@ -102,11 +103,12 @@ nav {border-top: 1px solid #dad5cb;}
 #sidebar-second .block-book ul.menu li {background: #f2f1eb; border-top: 1px solid #fbfbf9; margin: 0; padding: 12px 5px 12px 10px;}
 #sidebar-second .block-book ul.menu ul li {padding: 6px 5px 6px 10px; border: none;}
 #sidebar-second .block-book a.active {color: #000000;}
-#sidebar-second .block-menu ul.menu {margin: 0; padding: 0; list-style: none;}
-#sidebar-second .block-menu ul.menu li {}
+#sidebar-second .block-menu ul.menu {margin: 0 0 0 25px; padding: 0;}
+#sidebar-second .block-menu ul.menu li {list-style-type:square; list-style-image:url("../images/bullet.gif");}
+#sidebar-second .block-menu ul.menu li a {color:#827252; padding:0px;}
+#sidebar-second .block-menu ul.menu li a.active {color:#000000;}
 #sidebar-second .block-menu ul.menu li ul {}
 #sidebar-second .block-menu ul.menu li ul li.last {margin: 0;}
-#sidebar-second .block-menu a.active {color: #000000;}
 #sidebar-second .dropdown-menu {background-color:transparent;}
 
 /* ----- Admin Menu ------------------ */
@@ -127,7 +129,6 @@ nav {border-top: 1px solid #dad5cb;}
 
 /* CONTAINERS ***************************** */
 /* ----- Blocks ---------------------- */
-#main .block {margin-bottom: 40px;}
 .sub-block h2 {border-bottom:none; border-top:4px solid #8c1515; padding-top: 6px; margin-bottom:1em;}
 
 /* ----- Wells ----------------------- */
@@ -168,7 +169,7 @@ nav {border-top: 1px solid #dad5cb;}
 /* GENERAL OVERRIDES ********************* */
 /* ----- Bootstrap Overrides --------- */
 /* ----- Field Collection Overrides -- */
-.page-node .content-body .field.field-name-field-s-image-image {margin-bottom:0px;}
+.page-node .content-body .field.field-name-field-s-image-image {margin-bottom:10px;}
 /* ----- Field Label Overrides ------- */
 
 /* STANFORD FEATURES OVERRIDES *********** */
