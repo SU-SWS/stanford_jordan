@@ -17,6 +17,7 @@ strong {letter-spacing: 0.02em;}
 /* ----- Links ----------------------- */
 p a {border-bottom:dotted 1px #827252;}
 p a:hover {border-bottom:dotted 1px #2e2d29;}
+p a.more-link {border-bottom:0;}
 .btn-red a, a.btn-red {background-color: #8C1515; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.5); -moz-box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.5); box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.5); color: white; padding: 7px 15px; }
 .btn-red a:hover, a.btn-red:hover {background-color: #660E0E;}
 
@@ -233,11 +234,3 @@ form#system-themes-form {overflow: auto;}
 }
 
 /* ----- Print ----------------------- */
-
-/* Unused styles:
-.article-box {margin-top: 30px;}
-.article-box.last {margin-left: 0; margin-right: 0;}
-.article-box.style1 {border: 1px solid #e9e6df; padding: 20px;}
-.article-box.style2 {border-top: 1px solid #e9e6df; padding-top: 20px;}
-.article-box.style3 {border-top: 1px solid #e9e6df; border-bottom: 1px solid #e9e6df; padding: 20px 0;}
-*/
