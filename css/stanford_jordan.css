@@ -64,6 +64,7 @@ hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; padding: 0;}
 nav {font-size: 18px; margin: 0 0 12px 0; padding: 0; text-transform: uppercase; line-height: 1em; font-weight:normal; letter-spacing:0.02em;}
 .navbar .nav > li > a {color: #827252;}
 .navbar .nav > li > a:hover, .navbar .nav > li > a:active {color: #827252;}
+.dropdown-menu > li > a {padding: 10px 20px;}
 
 @media (min-width: 768px) {
 nav {border-top: 1px solid #dad5cb;}
