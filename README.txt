@@ -2,12 +2,12 @@ Stanford Jordan Theme for Drupal 7.x
 
 -- SUMMARY -- 
 
-Authors: Brian Young
+Authors: Brian Young, Megan Erin Miller
 The Stanford Jordan Drupal theme is recommended for department and official group sites.
 
 -- REQUIREMENTS --
 
-The Stanford Jordan Drupal theme is intended for Drupal versions 7 only; it will not work with Drupal 6 or below.  You must install the Open Framework and Stanford Framework themes for Stanford Branner to operate properly.
+The Stanford Jordan Drupal theme is intended for Drupal versions 7 only; it will not work with Drupal 6 or below. You must install the Open Framework and Stanford Framework themes for Stanford Jordan to operate properly.
 
 -- INSTALLATION --
 
@@ -17,5 +17,4 @@ More detailed information on installing themes here: http://drupal.org/getting-s
 
 -- TROUBLESHOOTING --
 
-If you encounter any issues while using this theme at Stanford, please send a message to:
-drupallers@lists.stanford.edu
+If you encounter any issues while using this theme, please file a HelpSU request: http://helpsu.stanford.edu/helpsu.cgi?pcat=webdesign
